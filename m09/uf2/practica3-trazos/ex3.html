@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        padding: 2rem;
+    }
+    canvas {
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <canvas id="canvas" width="320" height="320"></canvas>
+
+    <script>
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+        let width = canvas.width;
+        let height = canvas.height;
+        let centerX = 160;
+        let centerY = 160;
+        let sizeStep = 11;
+        let steps = 10;
+
+        // 1r dibuix
+        let x = 0;
+
+        ctx.beginPath();
+        for (let i = 0; i < steps; i++) {
+            let y = 3 + i * sizeStep;
+            // vertical
+            ctx.moveTo(x, y);
+            // horizontal
+            ctx.lineTo(x + sizeStep, y);
+            x += sizeStep;
+        }
+
+        // 2n dibuix
+        ctx.moveTo(centerX, centerY+10);
+        ctx.lineTo(centerX, height-20);
+        ctx.lineTo(width-40, height-20);
+
+        for (let i = 0; i < steps+1; i++) {
+            let y = centerY+10 + i * sizeStep;
+            ctx.moveTo(centerX, y);
+            ctx.lineTo(centerX + sizeStep, y);
+        
+            ctx.lineTo(centerX + sizeStep, y + sizeStep);
+        
+            centerX += sizeStep;
+        }
+        ctx.stroke()
+    </script>
+</body>
+</html>

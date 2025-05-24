@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 3.1</title>
+</head>
+<style>
+    body {
+        padding: 3rem;
+    }
+    canvas {
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <canvas id="canvas" width="370" height="370"></canvas>
+
+    <script>
+        class Frame {
+            constructor(posX, posY, width, height) {
+                this.posX = posX;
+                this.posY = posY;
+                this.width = width;
+                this.height = height;
+            };
+        }
+
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+        let width = canvas.width;
+        let height = canvas.height;
+        ctx.imageSmoothingEnabled = false;
+        let frameNum = 0;
+
+        let img = new Image();
+        img.src = "sprite/Metal_Slug.gif";
+
+        // standing
+        let standing = [
+            new Frame(6, 226, 60, 56),
+            new Frame(73, 226, 60, 56),
+            new Frame(143, 226, 60, 56)
+        ];
+
+        // driving
+        let driving = [
+            // 1r fila
+            new Frame(8, 567, 60, 55),
+            new Frame(80, 567, 60, 55),
+            new Frame(152, 567, 59, 55),
+            new Frame(232, 567, 59, 55),
+            new Frame(301, 567, 59, 55),
+            new Frame(377, 567, 59, 55),
+            new Frame(448, 567, 61, 55),
+            new Frame(523, 567, 59, 55),
+            // 2n fila
+            new Frame(11, 632, 61, 55),
+            new Frame(91, 632, 60, 55),
+            new Frame(161, 632, 62, 55),
+            new Frame(232, 632, 60, 55),
+            new Frame(309, 632, 59, 55),
+            new Frame(381, 632, 61, 55),
+            new Frame(454, 632, 59, 55),
+            new Frame(529, 632, 61, 55),
+            // 3r fila
+            new Frame(15, 694, 59, 55),
+            new Frame(87, 694, 60, 55),
+            new Frame(154, 694, 59, 55),
+            new Frame(221, 694, 60, 55),
+            new Frame(295, 694, 60, 55)
+        ];
+
+        // jumping
+        let jumping = [
+            new Frame(20, 477, 59, 54),
+            new Frame(94, 461, 53, 70),
+            new Frame(164, 460, 53, 71),
+            new Frame(238, 461, 53, 70),
+            new Frame(310, 467, 55, 64),
+            new Frame(377, 470, 55, 61),
+            new Frame(443, 475, 60, 56)
+        ];
+
+        // ducking
+        let ducking = [
+            // 1r fila
+            new Frame(10, 321, 60, 57),
+            new Frame(79, 321, 60, 57),
+            new Frame(146, 320, 59, 58),
+            new Frame(216, 321, 59, 57),
+            new Frame(285, 325, 60, 53),
+            new Frame(356, 328, 59, 50),
+            new Frame(428, 334, 65, 44),
+            new Frame(505, 337, 69, 41),
+            // 2n fila
+            new Frame(10, 389, 70, 40),
+            new Frame(98, 389, 70, 40),
+            new Frame(180, 389, 70, 40),
+            new Frame(259, 389, 70, 40),
+            new Frame(337, 389, 70, 40),
+        ];
+
+        let action = standing;
+        
+        img.addEventListener('load', () => {
+            setInterval(() => {
+                ctx.clearRect(0, 0, width, height);
+                let frame = action[frameNum];
+
+                ctx.drawImage(img, frame.posX, frame.posY, frame.width, frame.height, 10, 10, frame.width*5, frame.height*5);
+                frameNum = (frameNum + 1) % action.length;
+            }, 300);
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key == 'ArrowLeft' || e.key === 'ArrowRight') {
+                action = driving;
+            } else if (e.key == 'ArrowUp') {
+                action = jumping;
+            } else if (e.key == ' ') {
+                action = ducking;
+            }
+        });
+
+        document.addEventListener('keyup', (e) => {
+            if (e.key == 'ArrowLeft' || e.key === 'ArrowRight' || e.key === 'ArrowUp' || e.key === ' ') {
+                action = standing;
+                frameNum = 0;
+            }
+        })
+
+    </script>
+</body>
+</html>

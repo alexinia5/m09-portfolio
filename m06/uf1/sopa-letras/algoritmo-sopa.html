@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sopa de Letras Algoritmo</title>
+</head>
+<body>
+    <style>
+        table {
+            border-collapse: collapse;
+            font-size: 20px;
+        }
+    
+        td {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ccc;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+    </style>
+    <table>
+        <tr><td>l</td><td>z</td><td>x</td><td>h</td><td>c</td><td>u</td><td>w</td><td>m</td><td>w</td><td>f</td><td>t</td></tr>
+        <tr><td>b</td><td>x</td><td>y</td><td>j</td><td>d</td><td>n</td><td>c</td><td>s</td><td>s</td><td>j</td><td>k</td></tr>
+        <tr><td>a</td><td>f</td><td>r</td><td>o</td><td>n</td><td>t</td><td>e</td><td>n</td><td>d</td><td>a</td><td>q</td></tr>
+        <tr><td>c</td><td>o</td><td>u</td><td>r</td><td>c</td><td>h</td><td>t</td><td>t</td><td>p</td><td>v</td><td>t</td></tr>
+        <tr><td>k</td><td>s</td><td>c</td><td>d</td><td>p</td><td>f</td><td>q</td><td>n</td><td>z</td><td>a</td><td>k</td></tr>
+        <tr><td>e</td><td>h</td><td>s</td><td>a</td><td>d</td><td>c</td><td>p</td><td>i</td><td>y</td><td>s</td><td>j</td></tr>
+        <tr><td>n</td><td>f</td><td>t</td><td>t</td><td>t</td><td>s</td><td>q</td><td>s</td><td>t</td><td>c</td><td>l</td></tr>
+        <tr><td>d</td><td>j</td><td>w</td><td>m</td><td>k</td><td>g</td><td>m</td><td>a</td><td>b</td><td>r</td><td>e</td></tr>
+        <tr><td>z</td><td>a</td><td>a</td><td>s</td><td>l</td><td>w</td><td>a</td><td>e</td><td>n</td><td>i</td><td>a</td></tr>
+        <tr><td>f</td><td>d</td><td>l</td><td>f</td><td>l</td><td>h</td><td>w</td><td>n</td><td>w</td><td>p</td><td>j</td></tr>
+        <tr><td>e</td><td>a</td><td>h</td><td>l</td><td>d</td><td>x</td><td>a</td><td>p</td><td>s</td><td>t</td><td>n</td></tr>
+    </table>
+
+    <script>
+        let diccionari = ['HTML', 'CSS', 'JAVASCRIPT', 'WEB', 'FRONTEND', 'BACKEND', 'DEVELOPER', 'SERVER']
+        let sopa = [
+            ['L','Z','X','H','C','U','W','M','W','F','T'],
+            ['B','X','Y','J','D','N','C','S','S','J','K'],
+            ['A','F','R','O','N','T','E','N','D','A','Q'],
+            ['C','O','U','R','C','H','T','T','P','V','T'],
+            ['K','S','C','D','P','F','Q','N','Z','A','K'],
+            ['E','H','S','A','D','C','P','I','Y','S','J'],
+            ['N','F','T','T','T','S','Q','S','T','C','L'],
+            ['D','J','W','M','K','G','M','A','B','R','E'],
+            ['Z','A','A','S','L','W','A','E','N','I','A'],
+            ['F','D','L','F','L','H','W','N','W','P','J'],
+            ['E','A','H','L','D','X','A','P','S','T','N']
+        ]
+
+        // Agrega la teva funcionalitat.
+        let palabrasEncontradas = [];
+        let letras = [];
+
+        function checkMatriz () {
+            for (let r = 0; r < sopa.length; r++) {
+                for(let c = 0; c < sopa[r].length; c++) {
+                    if (cercaHoritzontal() ||cercaVertical() || cercaDiagonalBaixADalt() || cercaDiagonalDaltBaix()) {
+
+                    }
+                } 
+            }
+        }
+
+        function cercaHoritzontal() {
+            let count;
+            // recorrer el diccionario
+            for (let p = 0; p < diccionario.length; p++) {
+                let paraula = diccionario[p];
+                count = 0;
+                for (let i = 0; i < diccionario[p].length && count == i; i++) {
+                    if (paruala[i] == sopa[r][c+i]) {
+                       count++;
+                    }
+
+                    if (count == paraula[i]) {
+                        console.log(paraula);
+                    }
+                }
+
+            }
+        }
+
+        // : Recorre verticalmente
+        function cercaVertical(r, c) {
+            let count;
+            // recorrer el diccionario
+            for (let p = 0; p < diccionario.length; p++) {
+                let paraula = diccionario[p];
+                count = 0;
+                for (let i = 0; i < diccionario[p].length && count == i; i++) {
+                    if (r+i < sopa.length && paruala[i] == sopa[r+i][c]) {
+                       count++;
+                    }
+
+                    if (count == paraula[i]) {
+                        console.log(paraula);
+                    }
+                }
+
+            }
+        }
+
+
+        function cercaDiagonalBaixADalt() {
+
+        }
+
+        function cercaDiagonalDaltBaix() {
+            
+        }
+        
+        // mostrar palabras encontradas
+        for (let e of palabrasEncontradas) {
+            document.write(e);
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body {
+    margin: 20mm;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    margin-top: 10mm;
+    transition: width 2s;
+}
+
+.red:hover {
+    width: 300px;
+}
+
+
+.red:hover + .blue{
+    width: 300px;
+    transition-delay: 1s; 
+}
+
+.red  {
+    background-color: red;
+}
+
+.blue  {
+    background-color: blue;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 3.2</title>
+</head>
+<style>
+    body {
+        padding: 3rem;
+    }
+    canvas {
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <canvas id="canvas" width="500" height="570"></canvas>
+
+    <script>
+        class Frame {
+            constructor(posX, posY, width, height) {
+                this.posX = posX;
+                this.posY = posY;
+                this.width = width;
+                this.height = height;
+            };
+        }
+
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+        let width = canvas.width;
+        let height = canvas.height;
+        ctx.imageSmoothingEnabled = false;
+        let frameNum = 0;
+
+        let img = new Image();
+        img.src = "sprite/veggito.jpg";
+
+        // transforming
+        let transforming = [
+            new Frame(32, 22, 40, 93),
+            new Frame(90, 24, 39, 88),
+            new Frame(139, 7, 63, 110),
+            new Frame(212, 7, 60, 109),
+            new Frame(292, 9, 59, 108),
+        ];
+
+        // walking
+        let walking = [
+            new Frame(27, 129, 26, 89),
+            new Frame(75, 130, 46, 88),
+            new Frame(143, 130, 49, 88),
+            new Frame(220, 129, 26, 89)
+        ];
+
+        // dodging
+        let dodging = [
+            new Frame(26, 237, 34, 80),
+            new Frame(82, 223, 65, 83),
+            new Frame(175, 237, 34, 80),
+            new Frame(230, 233, 66, 79),
+         ]; 
+
+        // launching
+        let launching = [
+            new Frame(20, 351, 37, 88),
+            new Frame(70, 359, 53, 75),
+            new Frame(138, 356, 76, 77),
+            new Frame(225, 355, 77, 77),
+            new Frame(381, 419, 2, 0),
+            new Frame(397, 357, 75, 77),
+            new Frame(490, 356, 193, 77)
+        ];
+
+        // fighting
+        let fighting = [
+            new Frame(20, 477, 59, 54),
+            new Frame(94, 461, 53, 70),
+            new Frame(164, 460, 53, 71),
+            new Frame(238, 461, 53, 70),
+            new Frame(310, 467, 55, 64),
+            new Frame(377, 470, 55, 61),
+            new Frame(443, 475, 60, 56)
+        ];
+
+        // jumping
+        let jumping = [
+            new Frame(20, 477, 59, 54),
+            new Frame(94, 461, 53, 70),
+            new Frame(164, 460, 53, 71),
+            new Frame(238, 461, 53, 70),
+            new Frame(310, 467, 55, 64),
+            new Frame(377, 470, 55, 61),
+            new Frame(443, 475, 60, 56)
+        ];
+
+        // pirouette
+        let pirouette = [
+            new Frame(20, 477, 59, 54),
+            new Frame(94, 461, 53, 70),
+            new Frame(164, 460, 53, 71),
+            new Frame(238, 461, 53, 70),
+            new Frame(310, 467, 55, 64),
+            new Frame(377, 470, 55, 61),
+            new Frame(443, 475, 60, 56)
+        ];
+
+        img.addEventListener('load', () => {
+            //startSprite(transforming);
+            //startSprite(walking);
+            //startSprite(dodging);
+            //startSprite(launching);
+            startSprite(fighting);
+        });
+
+        function startSprite(array) {
+            setInterval(() => {
+                ctx.clearRect(0, 0, width, height);
+                let frame = array[frameNum];
+
+                ctx.drawImage(img, frame.posX, frame.posY, frame.width, frame.height, 0, 10, frame.width*5, frame.height*5);
+                frameNum = (frameNum + 1) % array.length;
+            }, 300);
+        }
+    </script>
+</body>
+</html>

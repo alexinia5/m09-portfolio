@@ -1,0 +1,27 @@
+body {
+    margin: 20mm;
+    --box-color: #6A7C88;
+}
+
+.content {
+    display: grid;
+    background-color: #aad2ec;
+    grid-template-columns: 30mm 30mm 30mm;
+    grid-template-rows: 10mm 10mm  10mm;
+    justify-content: center;
+}
+
+div {
+    background-color: var(--box-color);
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+
+div:nth-child(1) {
+    grid-column-start: span 3;
+}
+div:nth-child(2) {
+    grid-row-start: span 2;
+    grid-column-start: 1 / 3;
+}

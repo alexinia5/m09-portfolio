@@ -1,0 +1,27 @@
+body {
+    margin: 20mm;
+}
+
+div {
+    margin-top: 15mm;
+    font-size: 30mm;
+}
+
+div:nth-child(1) {
+    text-shadow: 1px -15px 0px #FFE284;
+    color: #FB8F8C;
+    font-family: "Monoton", sans-serif;
+}
+
+div:nth-child(2) {
+    color: #d5f7f6;
+    text-shadow: -10px 10px 0px #6EF0EE;
+    font-family: "Bungee", sans-serif;
+}
+
+div:nth-child(3) {
+    color: blue;
+    text-shadow:  0 0 15px #1763c0, 0 0 15px #8CBCF7;
+    font-family: "Codystar", sans-serif;
+    font-weight: 600;
+}

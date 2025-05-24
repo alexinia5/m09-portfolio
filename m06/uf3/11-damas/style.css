@@ -1,0 +1,64 @@
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.board div {
+    display: flex;
+    width: 500px;
+    border: 1px solid #6e5b58;
+}
+
+.board div:nth-child(odd) div:nth-child(odd) {
+    background-color: #f3f3e5;
+}
+
+.board div:nth-child(odd) div:nth-child(even) {
+    background-color: #896059;
+}
+
+.board div:nth-child(even) div:nth-child(even) {
+    background-color: #f3f3e5;
+}
+
+.board div:nth-child(even) div:nth-child(odd) {
+    background-color: #896059;
+}
+
+.board div div {
+    height: 50px;
+    width: 50px;
+}
+
+.whiteQueen, .blackQueen {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.whiteQueen {
+    background-image: url(img/blanco.png);
+}
+
+.blackQueen {
+    background-image: url(img/negro.png);
+}
+
+.toSelect {
+    box-shadow: 0px 0px 0px 4px inset rgb(255, 216, 131);
+}
+
+.markMovements {
+    box-shadow: 0px 0px 0px 4px inset rgb(142, 243, 228);
+}
+
+.removeQueen {
+    background-image: none;
+}
+
+.putArrow {
+    box-shadow: 0px 0px 0px 4px inset rgb(239, 16, 16);
+}

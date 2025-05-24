@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 5</title>
+</head>
+<style>
+    #canvas {
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <canvas id="canvas" width="320" height="320"></canvas>
+    <script>
+        const GAP = 32;   
+
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+        let width = canvas.width;
+        let height = canvas.height;
+
+        // bottom
+        for (let j = 0; j <= width; j++) {
+            ctx.beginPath();    
+            ctx.moveTo(j * GAP, 320);
+            ctx.lineTo(320, 320 - (j * GAP));
+            ctx.stroke();
+        }
+    </script>
+</body>
+</html>

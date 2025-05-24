@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F1F1F1;
+}
+
+.nav {
+    margin-left: 20mm;
+    margin-top: 9mm;
+    color: #244D7C;
+}
+
+.nav h2{
+    width: 0;
+    height: 0;
+    font-size: 30px;
+    margin-bottom: 3mm;
+}
+
+.menu-list {
+    margin-left: 60mm;
+    color: #272727;
+}
+
+.menu-list ul li{
+    list-style-type: none;
+    float: left;
+    margin-left: 9mm;
+}
+
+.content {
+    margin-top: 20mm;
+    margin-left: 20mm;
+    width: 29em;  
+}
+
+.content h2 {
+    font-weight: 450;
+    color: #0C0C0C;
+    font-size: 34px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.credit-1 {
+    border: 1px solid #043b6b;
+    margin-top: 7mm;
+    width: 80mm;
+    height: 58mm; 
+    border-radius: 25px;
+    color: white;
+    background-image: linear-gradient(120deg, #0A3C68 1%,#205c7e 31%,#3b7d8f 70%,#589aa4 100%);
+}
+
+img {
+    width: 10mm;
+    height: 7mm;
+    border-radius: 5px;
+    margin-left: 6mm;
+    margin-top: 7mm;
+}
+
+p.numbers-1 {
+    margin-left: 6mm;
+    margin-top: 7mm;
+    font-size: 4mm;
+}
+
+p.name {
+    margin-left: 9mm;
+    margin-top: 8mm;
+    font-size: 3.5mm;
+}
+
+.credit-2 {
+    border: 1px solid #478B81 #BFC291;
+    position: relative;
+    width: 80mm;
+    height: 58mm; 
+    border-radius: 25px;
+    color: white;
+    background: linear-gradient(to right, #116d20 0%,#4b7d1e 38%,#698924 80%,#908c24 100%,#a0941a 100%);
+    left: 40mm;
+    bottom: 55mm;
+}
+
+.credit-name {
+    margin-left: 45mm;
+}
+
+p.numbers-2 {
+    margin-left: 6mm;
+    margin-top: 7mm;
+    font-size: 4mm;
+}
+
+.balance-block {
+    position: absolute;
+    width: 70mm;
+    height: 48mm; 
+    border-radius: 25px;
+    background-color: white;
+    border: 1px solid #EEEEEE;
+    left: 36%;
+    bottom: 75mm;
+    padding: 5mm;
+}
+
+.balance-block p {
+    color: #949494;
+    font-weight: bold;
+    font-size: 4.5mm;
+}
+
+p.money {
+    color: #0A3567;
+    font-weight: bolder;
+    font-size: 8mm;
+    margin-top: 2.5mm;
+}
+
+.available {
+    color: #949494;
+    font-weight: bold;
+    font-size: 4mm;
+    margin-top: 15mm;
+}
+
+span {
+    color: #0A3567;
+}

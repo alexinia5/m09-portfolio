@@ -1,0 +1,33 @@
+body {
+    margin: 20mm;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    width: 40mm;
+    height: 40mm;
+    opacity: 0.8;  
+    position: absolute;
+}
+
+.first {
+    background-color: #FF2B9E;
+    z-index: 1;
+}
+
+.second {
+    background-color: #1AA3D1;
+    z-index: 2;
+    margin-top: 10mm;
+    margin-left: 30mm;
+}
+
+.third {
+    background-color: #1A8D1A;
+    margin-top: 35mm;
+    margin-left: 10mm;
+}

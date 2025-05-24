@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    canvas {
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <canvas id="canvas" width="320" height="320"></canvas>
+    <script>
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'rgb(208, 247, 208)';
+
+        ctx.beginPath();
+        ctx.moveTo(0, 140);
+        ctx.quadraticCurveTo(110,10,170,40);
+        ctx.quadraticCurveTo(160,80,180,87); 
+        ctx.quadraticCurveTo(230,45,240,90);
+        ctx.lineTo(240,200);
+        ctx.lineTo(0,200); 
+        ctx.fill();
+
+        ctx.fillStyle = 'rgb(239, 239, 146, 0.4)';
+        
+        ctx.beginPath();
+        ctx.moveTo(60, 200);
+        ctx.quadraticCurveTo(121,47,150,33);
+        ctx.lineTo(200, 20);
+        ctx.quadraticCurveTo(133,220,240,40);
+        ctx.lineTo(240, 200);
+        ctx.lineTo(60, 200);
+        ctx.fill()
+    </script>
+</body>
+</html>

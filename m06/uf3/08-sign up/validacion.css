@@ -1,0 +1,31 @@
+.email-psswd {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        border-bottom: 1.5px solid grey;
+        max-width: 20%;
+        outline: none;
+    }
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 3mm;
+}
+
+#check-chars, #check-numbers, #check-special-char, #check-upper-lower {
+    border: 2px solid black;
+    width: 7mm;
+    height: 7mm;
+    border-radius: 50px;
+}
+
+.correct {
+    background-color: rgb(203, 246, 139);
+}
+
+.incorrect {
+    background-color: rgb(245, 102, 102);
+}

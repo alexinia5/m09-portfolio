@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 1</title>
+</head>
+<style>
+    body {
+        padding: 3rem;
+    }
+    canvas {
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+
+    <script>
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+        let width = canvas.width;
+        let height = canvas.height;
+
+        let loadImages = [];
+        let onload = 0;
+        let frameNum = 0;
+
+        let images = [
+            "img/Frame0.png",
+            "img/Frame1.png",
+            "img/Frame2.png",
+            "img/Frame3.png",
+            "img/Frame4.png",
+            "img/Frame5.png",
+            "img/Frame6.png",
+        ];
+
+        for (let i = 0; i < images.length; i++) {
+            let img = new Image();
+            img.src = images[i];
+            
+            img.addEventListener('load', () => {
+                onload++;
+
+                if (onload === images.length) {
+                    drawImages(img);
+                }
+            });
+            loadImages.push(img);
+        }
+
+        function drawImages(img) {
+            setInterval(() => {
+                ctx.clearRect(0, 0, width, height);
+                ctx.drawImage(loadImages[frameNum], 100, 100);
+                frameNum = (frameNum + 1) % loadImages.length;
+            }, 300);
+        }
+        
+    </script>
+</body>
+</html>

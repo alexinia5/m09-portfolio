@@ -1,0 +1,18 @@
+body {
+    margin: 20mm;
+    --box-color: #6A7C88;
+}
+
+.content {
+    display: grid;
+    background-color: #aad2ec;
+}
+
+div {
+    background-color: var(--box-color);
+    border: 1px solid white;
+    color: white;
+
+    grid-template-columns: auto auto auto;
+    text-align : center;
+}

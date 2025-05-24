@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="validacion.css">
+    <!-- font awesome -->
+</head>
+<body>
+    <div class="container">
+        <div class="titles">
+            <h2>Get access to everything.</h2>
+            <p>Sign up for a free account for exclusive access to our site.</p>
+        </div>
+        <div class="email-psswd">
+            <input type="email" id="email" value="">
+            <input type="text" name="" id="password">
+        </div>
+        <div class="validation">
+            <div class="box">
+                <div id="check-chars">
+                    <i class="fa fa-xmark"></i>
+                </div>
+                <p>Password must be over 8 characters.</p>
+            </div>
+            <div class="box"> 
+                <div id="check-numbers"></div>
+                <p>Password must contain 1 number.</p>
+            </div>
+            <div class="box">
+                <div id="check-special-char"></div>
+                <p>Password must contain 1 special character.</p>
+            </div>
+            <div class="box">
+                <div id="check-upper-lower"></div>
+                <p>Password must contain 1 upper case and 1 lower case letter.</p>
+            </div>    
+        </div>
+        <div class="btns">
+            <button id="submit">Sign Up</button>
+            <button>Continue with Google</button>
+        </div>
+    </div>
+    <script src="validacion.js"></script>
+</body>
+</html>

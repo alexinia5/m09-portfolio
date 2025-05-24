@@ -1,0 +1,41 @@
+body {
+    margin: 20mm;
+}
+
+div {
+    transform-origin: 12%;
+    animation: campana 2s infinite;
+}
+
+@keyframes campana {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(50deg);
+    }
+    30% {
+        transform: rotate(-50deg);
+    }
+    40% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    60% {
+        transform: rotate(10deg);
+    }
+    70% {
+        transform: rotate(-10deg);
+    }
+    80% {
+        transform: rotate(5deg);
+    }
+    90% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        padding: 1rem;
+    }
+    canvas {
+        border: 1px solid black;
+        padding: 1rem;
+    }
+</style>
+<body>
+    <canvas id="canvas1" width="320" height="320"></canvas>
+    <canvas id="canvas2" width="320" height="320"></canvas>
+    
+    <script>
+        let canvas = document.getElementById('canvas1');
+        let ctx = canvas.getContext('2d');
+        ctx.lineWidth = 2.5;
+
+        ctx.fillStyle = '#FF8800';
+        ctx.beginPath();
+        ctx.moveTo(120, 145);
+        ctx.lineTo(160, 100);
+        ctx.lineTo(160, 190);
+        ctx.fill();
+
+        ctx.fillStyle = 'red';
+        arrow(ctx)
+        ctx.closePath();
+        ctx.fill();
+
+        let canvas2 = document.getElementById('canvas2');
+        let ctx2 = canvas2.getContext('2d'); 
+        ctx2.lineWidth = 2.5;
+        ctx2.strokeStyle = '#FF8800';
+        
+        ctx2.beginPath();
+        ctx2.moveTo(120, 140);
+        ctx2.lineTo(160, 100);
+        ctx2.lineTo(160, 190);
+        ctx2.lineTo(120, 140);
+        ctx2.stroke()
+
+        arrow(ctx2)
+        ctx2.closePath();
+        ctx2.stroke()
+
+        function arrow (ctx) {
+            ctx.beginPath();
+            ctx.moveTo(0, 40);
+            ctx.lineTo(50, 10);
+            ctx.lineTo(100, 40);
+            ctx.lineTo(60, 40);
+            ctx.lineTo(60, 100);
+            ctx.lineTo(40, 100);
+            ctx.lineTo(40, 40);
+            ctx.lineTo(0, 40);
+        }
+    </script>
+</body>
+</html>

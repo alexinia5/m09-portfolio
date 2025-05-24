@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four in a Row</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #board {
+            display: grid;
+            grid-template-columns: repeat(7, 60px);
+            gap: 5px;
+        }
+
+        .cell {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conecta 4</h1>
+    <main>
+        <div id="board"></div>
+    </main>
+
+    <script>
+        const board = document.getElementById('board');
+        const rows = 6;
+        const cols = 7;
+        let currentPlayer = 'X';
+        let gameBoard = [];
+
+        // Initialize the game board
+        for (let row = 0; row < rows; row++) {
+            gameBoard[row] = [];
+            for (let col = 0; col < cols; col++) {
+                gameBoard[row][col] = '';
+                const cell = document.createElement('div');
+                cell.classList.add('cell');
+                cell.dataset.row = row;
+                cell.dataset.col = col;
+                cell.addEventListener('click', handleCellClick);
+                board.appendChild(cell);
+            }
+        }
+
+        function handleCellClick(event) {
+            const row = parseInt(event.target.dataset.row);
+            const col = parseInt(event.target.dataset.col);
+
+            // Check if the column is not full
+            if (gameBoard[0][col] === '') {
+                // Find the lowest empty row in the clicked column
+                let i;
+                for (i = rows - 1; i >= 0; i--) {
+                    if (gameBoard[i][col] === '') {
+                        gameBoard[i][col] = currentPlayer;
+                        updateBoard();
+                        checkForWin(row, col);
+                        switchPlayer();
+                        break;
+                    }
+                }
+            }
+        }
+
+        function updateBoard() {
+            const cells = document.querySelectorAll('.cell');
+            cells.forEach(cell => {
+                const row = parseInt(cell.dataset.row);
+                const col = parseInt(cell.dataset.col);
+                cell.textContent = gameBoard[row][col];
+            });
+        }
+
+        function switchPlayer() {
+            currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+        }
+
+        function checkForWin(row, col) {
+            // TODO: Implementa la lògica de comprovació de guanys
+            // Podeu utilitzar la matriu «gameBoard» per a comprovar si hi ha quatre files en direccions horitzontals, verticals i diagonals.
+            // Si hi ha un guanyador, podeu mostrar un missatge i gestionar el final del joc.          
+        }
+
+        // horizontal
+        function horizontalWin(row, col) {
+            // Recorrer columnas [cols] = 7
+            for (let col = 0; col <= gameBoard.length; col++) {                
+                //Recorrer filas [ro<ws] = 6
+                for (let row = 0; row <= gameBoard.length; row++) {
+                    // comprovar si en 4 filas y 4 columnas hay una ficha X o O  m
+                    if (gameBoard[row][0] === 'X' && gameBoard[row][1] === 'X' && gameBoard[row][2] === 'X' && gameBoard[row][3] === 'X') {
+                            winnerPlayer();
+                    } else if (gameBoard[col][row] === 'O') {
+                        winnerPlayer();
+                    }
+                }
+            }
+        }
+
+        // vertical
+        function verticalWin(row, col) {
+            // Recorrer columnas [cols] = 7
+            for (let col = 0; col <= gameBoard.length; col++) {                
+                //Recorrer filas [rows] = 6
+                for (let row = 0; row <= gameBoard.length; row++) {
+                    // comprovar si en 4 filas y 4 columnas hay una ficha X o O
+                    if (gameBoard[col] === 'X' && gameBoard[row] === 'X') {
+                        winnerPlayer();
+                    } else if (gameBoard[col] === 'O' && gameBoard[row] === 'O') {
+                        winnerPlayer();
+                    }
+                }
+            }
+        }
+
+        // diagonalt arriba-abajo
+        function diagonalTopBottomWin(row, col) {
+            
+        }
+
+        // diagonal abajo-arriba
+        function diagonalBottomTopWin(row, col) {
+            // Recorrer columnas [cols] = 7
+            for (let col = 0; col <= 4; col++) {                
+                //Recorrer filas [rows] = 6
+                for (let row = 0; row <= 4; row++) {
+                    // comprovar si en 4 filas y 4 columnas hay una ficha X o O
+                    if (gameBoard[col][col-1] === 'X' && gameBoard[row][row-1] === 'X') {
+                        if(gameBoard[col][col] === 'X' && gameBoard[row][row] === 'X'){
+                            if(gameBoard[col][col+1] === 'X' && gameBoard[row][row+1] === 'X') {
+                                if(gameBoard[col-1][col+1] === 'X' && gameBoard[row-1][row+1] === 'X') {
+                                    winnerPlayer();
+                                }
+                            }
+                        }
+                    } else if (gameBoard[col] === 'O' && gameBoard[row] === 'O') {
+                        if(gameBoard[col][col] === 'X' && gameBoard[row][row] === 'X'){
+                            if(gameBoard[col][col+1] === 'X' && gameBoard[row][row+1] === 'X') {
+                                if(gameBoard[col-1][col+1] === 'X' && gameBoard[row-1][row+1] === 'X') {
+                                    winnerPlayer();
+                                }
+                            }
+                        }
+                    }
+                    // comprovar las posiciones de row y col con X
+                    // comprovar las posiciones de row y col con Y
+                }
+            }
+        }
+
+        //mensaje de haber ganado y se para el juego
+        function winnerPlayer () {
+            document.write("Has ganado! Se ha acabado el juego");
+        }
+
+    </script>
+</body>
+</html>

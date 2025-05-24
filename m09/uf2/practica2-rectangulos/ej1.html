@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<style>
+    body {
+        padding: 3rem;
+    }
+    canvas {
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <canvas id="canvas" width="320" height="320"></canvas>
+
+    <script>
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+        let width = canvas.width;
+        let height = canvas.height;
+
+        ctx.fillStyle = 'black';
+        ctx.fillRect(0, 0, 260, 150);
+
+        ctx.fillStyle = '#CC0000';
+        ctx.fillRect(15, 13, 180, 110);
+
+        ctx.fillStyle = '#0000CC';
+        ctx.fillRect(110, 190, 180, 115);
+    </script>
+</body>
+</html>

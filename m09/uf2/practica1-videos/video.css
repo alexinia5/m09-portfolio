@@ -1,0 +1,50 @@
+video {
+    width: 100%;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#back, #play-btn, #pause, #forward, #sound, #volum {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#back {
+    background-image: url('img/back.png');
+}
+
+#play-btn {
+    background-image: url('img/play.png');
+}
+
+#pause {
+    background-image: url('img/pause.png');
+}
+
+#forward {
+    background-image: url('img/forward.png');
+}
+
+.sound {
+    background-image: url('img/sound.png');
+}
+
+.muted {
+    background-image: url('img/mute.png');
+}
+
+/* .volum {
+    background-image: url('img/');
+} */

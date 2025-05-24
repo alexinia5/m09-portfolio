@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<style>
+    body {
+        padding: 3rem;
+    }
+    canvas {
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+
+    <script>
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+        let width = canvas.width;
+        let height = canvas.height;
+
+        function randomColors () {
+
+            const steps = [0, 32, 64, 96, 128, 160, 192, 224, 255]; // tonos de gris
+            const value = steps[Math.floor(Math.random() * steps.length)];
+            return `rgb(${value}, ${value}, ${value})`;
+        }
+
+        for (let i = 0; i < width/2; i++) {
+            for (let j = 0; j < width/2; j++) {
+                ctx.fillStyle = randomColors();
+                ctx.fillRect(15*i, 15*j, 15, 15);
+            }
+        }
+    </script>
+</body>
+</html>

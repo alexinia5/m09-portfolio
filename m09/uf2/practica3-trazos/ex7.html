@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 7</title>
+</head>
+<style>
+    #canvas1, #canvas2 {
+        border: 1px solid black;
+    }
+
+    #canvas1 {
+        margin-right: 50px;
+    }
+</style>
+<body>
+    <canvas id="canvas1" width="320" height="320"></canvas>
+    <canvas id="canvas2" width="320" height="320"></canvas>
+    <script>
+        const GAP = 6;   
+        const CENTER_X = 160;
+        const CENTER_Y = 160;
+
+        // first canvas
+        let canvas1 = document.getElementById('canvas1');
+        let ctx1 = canvas1.getContext('2d');
+        let width = canvas1.width;
+        let height = canvas1.height;
+
+        // left
+        for (let j = 0; j*GAP <= height; j++) {
+            ctx1.beginPath();
+            ctx1.moveTo(CENTER_X, j*GAP);
+            ctx1.lineTo(0, CENTER_Y);
+            ctx1.stroke();
+        }
+
+        // right
+        for (let j = 0; j*GAP <= height; j++) {
+            ctx1.beginPath();
+            ctx1.moveTo(CENTER_X, j*GAP);
+            ctx1.lineTo(width, CENTER_Y);
+            ctx1.stroke();
+        }
+
+        // second canvas
+        let canvas2 = document.getElementById('canvas2');
+        let ctx2 = canvas2.getContext('2d');
+        let width2 = canvas2.width;
+        let height2 = canvas2.height;
+
+        // top
+        for (let j = 0; j*GAP <= width2; j++) {
+            ctx2.beginPath();
+            ctx2.moveTo(j*GAP, CENTER_Y);
+            ctx2.lineTo(CENTER_X, 0);
+            ctx2.stroke();
+        }
+
+        // bottom
+        for (let j = 0; j*GAP <= height2; j++) {
+            ctx2.beginPath();
+            ctx2.moveTo(j*GAP, CENTER_X);
+            ctx2.lineTo(CENTER_Y, width2);
+            ctx2.stroke();
+        } 
+
+    </script>
+</body>
+</html>

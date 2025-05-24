@@ -1,0 +1,89 @@
+body {
+    margin: 20mm;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10mm;
+}
+
+.box {
+    width: 30mm;
+    height: 30mm;
+    background-color: white;
+    border: 1px solid #9C9C9C;
+    border-radius: 12px;
+    margin-left: 7mm;
+}
+
+.header {
+    height: 40mm;
+    display: inline-flex;
+    gap: 20mm;
+    div:nth-child(1) {
+       box-shadow: 6px 6px 0px red;
+    }
+    div:nth-child(2) {
+        box-shadow: 6px 6px 6px red;
+    }
+    div:nth-child(3) {
+        box-shadow: 1px -1px 0px 3px red,
+        -1px 1px 0px 3px red;
+    }
+}
+
+.main {
+    height: 40mm;
+    display: inline-flex;
+    gap: 20mm;
+
+    div:nth-child(1) {
+        box-shadow: 1px -1px 5px 1px inset red,
+        -1px 1px 5px 1px inset red;
+    }
+    div:nth-child(2) {
+        box-shadow: 1px -1px 30px 0px inset red,
+        -1px 1px 25px 0px inset red;
+    }
+    div:nth-child(3) {
+        box-shadow: -6px 6px 0px 0px #FF4A53, 
+        -12px 12px 0px 0px #FF95A6,
+        -18px 18px 0px 0px #FFD5EE;
+    }
+}
+
+.footer {
+    height: 40mm;
+    display: inline-flex;
+    gap: 20mm;
+
+    div:nth-child(1) {
+        box-shadow: 13px -13px 0px 0px white,
+        13px -13px 0px 3px red;
+    }
+    div:nth-child(2) {
+        box-shadow: 1px -1px 0px 3px blue,
+        -1px 1px 0px 3px blue,
+        1px -1px 0px 7.5px green,
+        -1px 1px 0px 7.5px green,
+        1px -1px 0px 10.5px yellow,
+        -1px 1px 0px 10.5px yellow,
+        1px -1px 0px 15.5px orange,
+        -1px 1px 0px 15.5px orange,
+        1px -1px 0px 20.5px red,
+        -1px 1px 0px 20.5px red;
+    }
+    div:nth-child(3) {
+        box-shadow: 1px -1px 0px 2px blue,
+        -1px 1px 0px 2px blue,
+        -10px 10px 0px 0px white,
+        -10px 10px 0px 3px #1FC11B,
+        -20px 20px 0px 0px white,
+        -20px 20px 0px 3px yellow,
+        -30px 30px 0px 0px white,
+        -30px 30px 0px 3px #FF9C55,
+        -40px 40px 0px 0px white,
+        -40px 40px 0px 3px red;
+    }
+}

@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(242, 241, 241);
+}
+
+.body-part {
+    padding-top: 5em;
+    display: block;
+    width: 30em;
+    padding-left: 4em;
+}
+
+div.body-part h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+}
+
+div.body-part p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+div#menu-item {
+    background-color: white;
+    margin-left: 4em;
+    padding-left: 6em;
+    width: 70em;
+    text-align: center;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    position: absolute;
+    font-size: 2em;
+}
+
+div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div ol {
+    display: inline; /* Hace que los ítems del menú estén en una línea horizontal */
+}
+
+div#menu-item button {
+    margin-left: 50em;
+    margin-bottom: 1em;
+    border-radius: 2em;
+    background-color: rgb(251, 81, 81);
+    color: white;
+    font-size: large;
+    width: 9em;
+    height: 2.5em;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.body-part button {
+    width: 9em;
+    height: 2.5em;
+    border-radius: 2em;
+    background-color: rgb(251, 81, 81);
+    color: white;
+    font-size: medium;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.images {
+    position: absolute;
+    left: 30em;
+    top: 10em;
+}
+
+div.images img[alt~="first"]{
+
+    width: 15em;
+    height: 30em;
+    border: 1em solid #ffffff;
+    border-radius: 8em;
+    display: inline-table;
+    position: absolute;
+    margin-left: 17em;
+}
+
+div.images img[alt~="second"]{
+
+    width: 11em;
+    height: 18em;
+    border: 1em solid #ffffff;
+    border-radius: 7em;
+    display: inline-table;
+    margin-left: 8em;
+}
+
+div.images img[alt~="third"]{
+
+    width: 12em;
+    height: 18em;
+    border: 1em solid #ffffff;
+    border-radius: 7em;
+    display: inline-table;
+    right: 3em;
+    margin-inline-start: 6em;
+    margin-top: 5em;
+    margin-left: 8em;
+}
+

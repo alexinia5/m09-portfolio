@@ -1,0 +1,117 @@
+body {
+    padding: 10mm;
+    background-color: #eaf2fb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.kanban {
+    min-width: 80mm;
+    padding: 10mm;
+    min-height: 110mm;
+    background-color: #F7FAFF;
+    border: 5px solid white;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    gap: 7mm;
+}
+
+#to-do, #doing, #done{
+    padding: 2mm;
+    min-width: 50mm;
+    min-height: 90mm;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4mm;
+}
+
+#to-do {
+    border: 2px solid #bdb3f7;
+    background-color: #d4cef7;
+}
+
+#to-do h2 {
+    color: #403092;
+}
+
+#doing {
+    border: 2px solid #b6dafb;
+    background-color: #CBE4FC;
+}
+
+#doing h2 {
+    color: #20548F;
+}
+
+#done {
+    border: 2px solid #f6ddb8;
+    background-color: #FAE8CD;
+}
+
+#done h2 {
+    color: #BF7B34; 
+}
+
+input {
+   outline: none; 
+   border: 1px solid rgb(206, 206, 206);
+   border-radius: 10px;
+   padding: 3mm;
+   display: none;
+   transition: display 0.3s ease;
+}
+
+button{
+    padding: 4mm;
+    height: 7mm;
+    border: 3px dotted ;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    border-color: #65549b;
+    background-color: #ebe5ff;
+    color: #51408a;
+}
+
+.taskBox {
+    display: flex;
+    background-color: white;
+    min-width: 20mm;
+    padding: 5mm;
+    min-height: 10mm;
+    border-radius: 10px;
+    order: 0;
+}
+
+.none {
+    display: none;
+}
+.flex {
+    display: flex;
+}
+
+/* drag & drop style */
+/* dragenter */
+.drag-to-do {
+    background-color: #f7f6ff73;
+    border: 3px solid #f0eff6;
+    color: transparent;
+}
+
+.drag-doing {
+    background-color: #d8eafe55;
+    border: 3px solid #f0f6fe;
+}
+
+.drag-done {
+    background-color: #fef7b855;
+    border: 3px solid #f0f6fe;
+}
+/* dragleave */

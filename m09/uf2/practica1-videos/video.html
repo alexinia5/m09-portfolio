@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pràctica 1</title>
+    <link rel="stylesheet" href="video.css">
+    <script src="video.js" defer></script>
+</head>
+<body>
+    <!-- ex.1 -->
+    <h1>Ex. 1</h1>
+    <video src="video.mp4" autoplay muted controls></video>
+
+    <!-- ex.2 -->
+    <h1>Ex. 2</h1>
+    <video src="video.mp4" poster="img/img.jpeg" controls></video>
+
+    <!-- ex.3 -->
+    <h1>Ex. 3</h1>
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video2.mov" type="video/mov">
+        <source src="video3.webm" type="video/webm">
+    </video>
+
+    <!-- ex.4 -->
+    <h1>Ex. 4</h1>
+    <video id="video" src="video.mp4" controls></video>
+    <p id="paused-video"></p>
+    
+    <!-- ex.5 -->
+    <h1>Ex. 5</h1>
+    <video id="video" src="video.mp4"></video>
+    <!-- botones: pausa, avanzar, adelantar, ir atrás, mute y modificar volument -->
+    <div class="controls">
+        <div class="play">
+            <button id="back"></button>
+            <button id="play-btn"></button>
+            <button id="pause"></button>
+            <button id="forward"></button>
+        </div>
+        <div class="voice">
+            <button id="sound" class="sound"></button>
+            <!-- <button class="volum"></button> -->
+        </div>
+    </div>
+</body>
+</html>

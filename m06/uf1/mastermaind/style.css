@@ -1,0 +1,180 @@
+.board {
+    border: 6px solid #dadde7;
+    background-color: #f0f5ff;
+    width: 90mm;
+    height: 240mm;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.border {
+    width: 140mm;
+    background-color: #b6c1cbcc;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 5mm;
+    gap: 7mm;
+
+    .game {
+        display: flex;
+        gap: 10mm;
+    }
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 5mm;
+}
+
+.colors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4mm;
+
+    div {
+        width: 55mm;
+        height: 13mm;
+        border-radius: 50px;
+    }
+
+    .box1, .box2 {
+        display: inline-flex;
+        gap: 1mm;
+    }
+
+    .box1 {
+        div:nth-child(1) {
+            background-color: rgb(236, 69, 69);
+            border: 2px solid rgb(167, 51, 51);
+        }
+        div:nth-child(2) {
+            background-color: rgb(127, 197, 106);
+            border: 2px solid rgb(99, 148, 84);
+        }
+        div:nth-child(3) {
+            background-color: rgb(90, 164, 224);
+            border: 2px solid rgb(74, 139, 191);
+        }
+        div:nth-child(4) {
+            background-color: rgb(234, 231, 141);
+            border: 2px solid rgb(175, 173, 108);
+        }
+    }
+
+    .box2 {
+        div:nth-child(1) {
+            background-color: rgb(132, 97, 81);
+            border: 2px solid rgb(98, 70, 59);
+        }
+        div:nth-child(2) {
+            background-color: rgb(252, 156, 112);
+            border: 2px solid rgb(209, 133, 97);
+        }
+        div:nth-child(3) {
+            background-color: rgb(30, 29, 28);
+        }
+        div:nth-child(4) {
+            background-color: white;
+            border: 2px solid rgb(191, 191, 189);
+        }
+    }
+}
+
+.check {
+    width: 50mm;
+    padding: 2mm;
+    font-size: 7mm;
+    border-radius: 20px;
+    color: #606d81;
+    font-weight: 600;
+    position: relative;
+    left: 15mm;
+}
+
+.mini-cercles {
+    width: 11mm;
+    height: 11mm;
+
+    display: flex;
+    flex-direction: row;
+    gap: 2mm;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 2mm; 
+    }
+}
+
+#e-1-1, #e-1-2, #e-1-3, #e-1-4,
+#e-2-1, #e-2-2, #e-2-3, #e-2-4,
+#e-3-1, #e-3-2, #e-3-3, #e-3-4,
+#e-4-1, #e-4-2, #e-4-3, #e-4-4,
+#e-5-1, #e-5-2, #e-5-3, #e-5-4,
+#e-6-1, #e-6-2, #e-6-3, #e-6-4,
+#e-7-1, #e-7-2, #e-7-3, #e-7-4,
+#e-8-1, #e-8-2, #e-8-3, #e-8-4,
+#e-9-1, #e-9-2, #e-9-3, #e-9-4,
+#e-10-1, #e-10-2, #e-10-3, #e-10-4 {  
+    width: 10mm;
+    height: 10mm;
+    border: 2px solid#2d415e;
+    border-radius: 50px;
+}
+
+
+#c11, #c12, #c13, #c14,
+#c21, #c22, #c23, #c24,
+#c31, #c32, #c33, #c34,
+#c41, #c42, #c43, #c44,
+#c51, #c52, #c53, #c54,
+#c61, #c62, #c63, #c64,
+#c71, #c72, #c73, #c74,
+#c81, #c82, #c83, #c84,
+#c91, #c92, #c93, #c94,
+#c101, #c102, #c103, #c104 {
+    width: 4mm;
+    height: 4mm;
+    background-color: #1e234d;
+    border-radius: 50px;
+}
+
+/* js code */
+.red {
+    background-color: rgb(236, 69, 69);
+}
+.green {
+    background-color: rgb(127, 197, 106);
+}
+.blue {
+    background-color: rgb(90, 164, 224);
+}
+.yellow {
+    background-color: rgb(234, 231, 141);
+}
+.brown {
+    background-color: rgb(132, 97, 81);
+}
+.orange {
+    background-color: rgb(252, 156, 112);
+}
+.black {
+    background-color: black;
+}
+.white {
+    background-color: white;
+}
+
+/* check sequence --> mini cercles */
+.correct {
+    background-color: rgb(222, 100, 100);
+}
+.misplaced {
+    background-color: rgb(243, 238, 238);
+}

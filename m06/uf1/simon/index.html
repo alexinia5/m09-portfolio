@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div>
+            <div class="color-btn" id="red" onclick="changeColorRed('red')"></div>
+            <div class="color-btn" id="green" onclick="changeColorGreen('green')"></div>
+        </div>
+        <div>
+            <div class="color-btn" id="blue" onclick="changeColorBlue('blue')"></div>
+            <div class="color-btn" id="yellow" onclick="changeColorYellow('yellow')"></div>
+        </div>
+    </div>
+    <div class="btn">
+        <h2>Simon</h2>
+        <button onclick="playGame()">Play</button>
+    </div>
+<script>
+    let r = document.getElementById("red");
+    let b = document.getElementById("blue");
+    let y = document.getElementById("yellow");
+    let g = document.getElementById("green");
+    let btn = document.getElementById("btn");
+
+    function changeColorRed() {
+        if (r.style.backgroundColor == 'rgb(243, 79, 101)') {
+            r.style.backgroundColor =  'rgb(247, 138, 153)';
+        } else {
+            r.style.backgroundColor = 'rgb(243, 79, 101)';
+        }
+        setTimeout(changeColorRed, 1100);
+       
+    }
+
+    function changeColorBlue() {
+        if (b.style.backgroundColor == 'rgb(58, 216, 251)') {
+            b.style.backgroundColor =  'rgb(163, 254, 253)';
+        } else {
+            b.style.backgroundColor = 'rgb(58, 216, 251)';
+        }
+        setTimeout(changeColorBlue, 1100);
+    }
+
+    function changeColorYellow() {
+        if (y.style.backgroundColor == 'rgb(252, 252, 140)') {
+            y.style.backgroundColor =  'rgb(255, 255, 188)';
+        } else {
+            y.style.backgroundColor = 'rgb(252, 252, 140)';
+        }
+        setTimeout(changeColorYellow, 1100);
+    }
+
+    function changeColorGreen() {
+        if (g.style.backgroundColor == 'rgb(89, 214, 140)') {
+            g.style.backgroundColor =  'rgb(155, 239, 189)';
+        } else {
+            g.style.backgroundColor = 'rgb(89, 214, 140)';
+        }
+        setTimeout(changeColorGreen, 1100);
+    }
+
+    // array con todos los colores
+    let arrayColors = [changeColorRed, changeColorBlue, changeColorGreen, changeColorYellow];
+    let encertarColors = [];
+    const clickColor = document.querySelector('.color-btn');
+
+    // colores mezclados
+    function shuffle(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    }
+   
+    // iniciar juego
+    function playGame() {
+        // colores random con secuencia
+        shuffle(arrayColors);   
+        setTimeout(playGame, 5000); 
+        encertarColors = [clickColor];
+        // clicar sobre los colores y comprobar que sea igual que la secuencia
+        if (arrayColors == encertarColors) {
+            // si es igual hacer otra secuencia
+            shuffleColors(arrayColors);
+            setTimeout(playGame, 5000); 
+        } 
+    }
+
+</script>
+</body>
+</html>

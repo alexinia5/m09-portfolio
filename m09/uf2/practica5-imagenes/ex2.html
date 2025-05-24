@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 2</title>
+</head>
+<style>
+    body {
+        padding: 2rem;
+    }
+    canvas {
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+
+    <script>
+        class Frame {
+            constructor (posX, posY, width, height) {
+                this.posX = posX;
+                this.posY = posY;
+                this.width = width;
+                this.height = height;
+            }
+        };
+
+        let walk = [
+            new Frame(9, 28, 16, 27),
+            new Frame(35, 28, 16, 27),
+            new Frame(64, 28, 16, 27),
+            new Frame(89, 28, 16, 27),
+            new Frame(116, 28, 16, 27),
+            new Frame(142, 28, 16, 27),
+            new Frame(168, 28, 16, 27),
+        ];
+
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+        let width = canvas.width;
+        let height = canvas.height;
+        ctx.imageSmoothingEnabled = false;
+
+       let img = new Image();
+       img.src = "sprite/mario.png";
+
+       let frameNum = 0;
+       img.addEventListener('load', (e) => {
+            //ctx.drawImage(img, posX, posY, width, height, 0, 0, width, height);
+           setInterval(() => {
+                ctx.clearRect(0, 0, width, height);
+                let frame = walk[frameNum];
+                ctx.drawImage(img, frame.posX, frame.posY, frame.width, frame.height, 30, 0, frame.width*10, frame.height*10);
+                
+                frameNum = (frameNum + 1) % walk.length;
+            }, 300);
+       });
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 8</title>
+</head>
+<body>
+    <canvas id="canvas" width="320" height="320"></canvas>
+
+    <script>
+        let canvas = document.getElementById('canvas')
+        let ctx = canvas.getContext('2d')
+        let width = canvas.width;
+        let height = canvas.height;
+        let gap = 4;
+        let mouseX = 150;
+        let mouseY = 150;
+        
+        function draw(mouseX, mouseY) {
+            // top 
+            for (let j = 0; j*gap < width; j++) {
+                ctx.beginPath();
+                ctx.moveTo(j*gap, 0);
+                ctx.lineTo(mouseX, mouseY);
+                ctx.stroke();
+            }
+
+            // right 
+            for (let j = 0; j*gap < height; j++) {
+                ctx.beginPath();
+                ctx.moveTo(width, j*gap);
+                ctx.lineTo(mouseX, mouseY);
+                ctx.stroke();
+            }
+
+            // bottom 
+            for (let j = 0; j*gap < width; j++) {
+                ctx.beginPath();
+                ctx.moveTo(j*gap, 310);
+                ctx.lineTo(mouseX, mouseY);
+                ctx.stroke();
+            }
+
+            // left 
+            for (let j = 0; j*gap < height; j++) {
+                ctx.beginPath();
+                ctx.moveTo(0, j*gap);
+                ctx.lineTo(mouseX, mouseY);
+                ctx.stroke();
+            }
+        }
+
+        canvas.addEventListener('mousemove', (e) => {
+            let mouseX = e.offsetX;
+            let mouseY = e.offsetY;
+            draw(mouseX, mouseY);
+        });
+
+    </script>
+</body>
+</html>

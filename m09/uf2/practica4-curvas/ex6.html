@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        padding: 2rem;
+    }
+    canvas {
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <canvas id="canvas" width="320" height="320"></canvas>
+    <script>
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+        let startX = 20;
+        let startY = 150;
+        let endX = 300;
+        let endY = 150;
+        let tendX = 160;
+        let tendY = 10;
+
+
+        function drawCurve(mouseX, mouseY) {
+            ctx.strokeStyle = 'black';
+            ctx.clearRect(0, 0, canvas.width, canvas.height)
+            ctx.beginPath();
+            ctx.moveTo(startX, startY);
+            ctx.quadraticCurveTo(mouseX, mouseY, endX, endY);
+            ctx.stroke();
+
+            ctx.strokeStyle = '#9B99E9';
+            ctx.beginPath();
+            ctx.moveTo(startX, startY);
+            ctx.lineTo(tendX, tendY);
+            ctx.lineTo(endX, endY);
+            ctx.stroke();
+
+            drawPoint(startX, startY, 'green');
+            drawPoint(tendX, tendY, 'purple');
+            drawPoint(endX, endY, 'red');
+        }
+
+        function drawPoint(x, y, color) {
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            ctx.arc(x, y ,5,0, Math.PI*2);
+            ctx.fill();
+        }
+
+        //capturar event
+        canvas.addEventListener('mousemove', (e) => {
+            if (e.buttons == 1) {
+                tendX = e.offsetX;
+                tendY = e.offsetY;
+                drawCurve(tendX, tendY);
+            }
+        })
+
+    </script>
+</body>
+</html>

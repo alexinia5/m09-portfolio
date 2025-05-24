@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 2rem;
+    padding-bottom: 9rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: 100%;
+    height: 100px;
+}
+
+header div {
+    width: 100%;
+    height: 100%;
+    background-color: #FFA437;
+}
+
+main {
+    width: 100%;
+    height: 300px;
+    background-color: #DAEC00;
+} 
+
+aside {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; 
+}
+
+aside div {
+    width: 100%;
+    background-color: #4A89D0;
+    height: 60mm;
+} 
+
+footer {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+} 
+
+footer div {
+    width: 100%;
+    background-color: #E3E3E3;
+    height: 35mm;
+}
+
+/* responsive */
+@media screen and (max-width: 320px) {
+    header {
+        flex-direction: column;
+        gap: 0.35rem;
+    }
+
+    header div {
+        height: 50mm;
+    }
+    
+    .container {
+        padding: 0.5rem;
+        gap: 1.2rem;
+    }
+
+    main {
+        height: 25mm;
+    }
+
+    aside {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    aside div {
+        height: 40mm;
+    }
+
+    footer div:nth-child(1) {
+        height: 12mm;
+    }
+
+    footer div:nth-child(2), footer div:nth-child(3),  footer div:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 1rem;
+        padding-bottom: 2.5rem;
+        gap: 1.5rem;
+    }
+    main {
+        height: 250px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    } 
+
+    footer div {
+        width: 49%;
+        height: 20mm;
+    }
+}
+
+/* tema fosc */
+@media (prefers-color-scheme: dark) {
+    .container {
+      background: rgb(13, 28, 58);
+    }
+
+    header div {
+        background-color: #dfa35a;
+    }
+
+    main {
+        background-color: #f5e079;
+    }
+
+    aside div {
+        background-color: #9cbde2;
+    }
+
+
+    footer div {
+        background-color: #d1caca;
+    }
+}

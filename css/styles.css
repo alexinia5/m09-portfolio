@@ -1,0 +1,53 @@
+section {
+    width: 100%;
+    height: 100vh;
+    padding: 4rem;
+}
+
+.landing-page {
+    background: #cae6d5;
+    background: radial-gradient(circle, rgba(230, 202, 216, 1) 6%, rgb(118, 113, 216) 35%, rgb(150, 179, 214) 69%);
+    /* background: #EEBEBB; */
+    /* background: radial-gradient(circle, rgba(238, 190, 187, 1) 0%, rgba(212, 156, 108, 1) 0%, rgba(176, 68, 88, 1) 13%, rgba(102, 36, 68, 1) 34%, rgba(68, 21, 74, 1) 57%, rgba(30, 24, 51, 1) 100%); */
+    border-bottom-right-radius: 35%;
+}
+
+body {
+    background-color: #c4d5ec;
+}
+
+footer {
+    background-color: #91A9D7;
+    height: 40vh;
+    border-top-left-radius: 45%;
+    margin-top: 100px;
+}
+
+/* mòduls projects */
+.border-line {
+    height: 5px;
+    width: 150px;
+}
+
+.imgEffect {
+    height: 350px;
+}
+
+.imgEffect img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: transform 0.2s ease-out;
+    border-radius: 25px;
+}
+
+.imgEffect:hover img {
+    transform: scale(1.05);
+}   
+
+.btnIframe {
+    width: 42px;
+    height: 40px;
+    background-color: #2B2630;
+    border: transparent;
+}

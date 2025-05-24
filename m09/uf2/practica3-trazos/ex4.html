@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    canvas {
+        padding: 1rem;
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <canvas id="canvas1" width="150" height="150"></canvas>
+    <canvas id="canvas2" width="150" height="150"></canvas>
+    <canvas id="canvas3" width="150" height="150"></canvas>
+    <canvas id="canvas4" width="150" height="150"></canvas>
+
+    <script>
+        let canvas1 = document.getElementById('canvas1');
+        let ctx1 = canvas1.getContext('2d');
+        draw(ctx1, 20, 1, 'fill', 'black');
+
+        let canvas2 = document.getElementById('canvas2');
+        let ctx2 = canvas2.getContext('2d');
+        draw(ctx2, 20, 1, 'fill', '#990000');
+
+        let canvas4 = document.getElementById('canvas4');
+        let ctx4 = canvas4.getContext('2d');
+        draw(ctx4, 20, 1, 'stroke', '#990000');
+
+        let canvas3 = document.getElementById('canvas3');
+        let ctx3 = canvas3.getContext('2d');
+        let width = canvas3.width;
+
+        ctx3.beginPath();
+        // punto de comienzo
+        ctx3.moveTo(20, 1);
+        // línea recta superior
+        ctx3.lineTo(20 + 40, 1);
+        // línea diagonal superior derecha
+        ctx3.lineTo(2 + width/2, 1 + 30);
+        // línea diagonal inferior derecha
+        ctx3.lineTo(width/2 - 15, 60);
+        // línea recta inferior
+        ctx3.lineTo((width/2 - 15) - 40, 60);   
+        // línea diagonal inferior izquierda
+        ctx3.lineTo(2, 30);
+        ctx3.closePath();
+        ctx3.stroke();
+
+        function draw(ctx, x, y, style, color) {
+            let width = 150;
+
+            if (style == 'fill') {
+                ctx.fillStyle = color;
+            } else if (style == 'stroke') {
+                ctx.strokeStyle = color;
+                ctx.lineWidth = 1;
+            }
+
+            ctx.beginPath();
+            // punto de comienzo
+            ctx.moveTo(x, y);
+            // línea recta superior
+            ctx.lineTo(x + 40, y);
+            // línea diagonal superior derecha
+            ctx.lineTo(2 + width/2, y + 30);
+            // línea diagonal inferior derecha
+            ctx.lineTo(width/2 - 15, 60);
+            // línea recta inferior
+            ctx.lineTo((width/2 - 15) - 40, 60);   
+            // línea diagonal inferior izquierda
+            ctx.lineTo(2, 30);
+            // línea diagonal superior izquierda
+            ctx.lineTo(x, y);
+
+            if (style == 'fill') {
+                ctx.fill();
+            } else if (style == 'stroke') {
+                ctx.stroke();
+            }
+
+            ctx.closePath();
+        }
+    </script>
+</body>
+</html>

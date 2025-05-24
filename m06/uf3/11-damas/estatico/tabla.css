@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amazonas-table {
+    padding: 3rem;
+    width:680px;
+    height:580px;
+}
+ 
+.board {
+    height:100%;
+    width:100%;
+    border-collapse: collapse;
+}
+ 
+table.board tr td {
+    border: 1.75px solid rgba(55, 27, 11, 0.803);
+}
+
+table.board tr:nth-of-type(odd) td:nth-of-type(odd),
+table.board tr:nth-of-type(even) td:nth-of-type(even) {
+    background-color:#4d241e;
+}
+
+table.board tr:nth-of-type(even) td:nth-of-type(odd),
+table.board tr:nth-of-type(odd) td:nth-of-type(even) {
+    background-color:#F4F4DB;
+}
+
+img {
+    width: 50px;
+}
+
+.negro {
+
+}
+
+.blanco {
+    
+}

@@ -1,0 +1,14 @@
+body {
+    margin: 20mm;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+div:hover {
+    width: 300px;
+    transition: 2s;
+}

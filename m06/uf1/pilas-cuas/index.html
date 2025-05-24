@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 5mm;
+    }
+    button {
+        width: 50mm;
+    }
+</style>
+<body>
+    <h1>Stack and Queue Example</h1>
+    <!-- pila -->
+    <div>
+        <!-- Correcto -->
+        <button onclick="p.push()">Push to Stack</button>
+        <!--  --> 
+        <button onclick="p.pop()">Pop from Stack</button>
+    </div>
+    <h2 id="stack"></h2>
+    
+    <!-- cua -->
+    <div>
+        <button onclick="c.enqueue()">Enqueue</button>
+        <button onclick="c.dequeue()">Dequeue</button>
+    </div>
+    <h2 id="queue"></h2>
+
+    <script>
+        class Item {
+            value
+            next
+        }
+
+        class Pila {
+
+            // declarar objeto item
+            item = new Item();
+
+            push () {
+                // poner valor
+                let pilaElement = prompt("Enter a value to push to the stack: ");
+    
+                // valor del elemento
+                this.item.value = pilaElement;
+                document.getElementById("stack").innerHTML = "Stack: " + this.item.value;
+    
+                // siguiente elemento y devolverlo
+                this.item.next = pilaElement;
+                
+                document.getElementById("stack").innerHTML = "Stack: " + this.item.next;
+            }
+    
+            pop () {     
+                // recorrer el objeto item.next
+                for (let i in this.item.next) {
+                    // si es el último elemento
+                    document.getElementById("stack").innerHTML = "Stack: " + i;
+                    // extraerlo
+                    document.getElementById("stack").innerHTML = "Stack: " + i;
+                }    
+            }
+        }
+    
+        class Cua {
+            enqueue () {
+                // poner valor
+                let cuaElement = prompt("Enter a value to push to the stack: ");
+    
+                let item = new Item();
+                // valor del elemento
+                item.value = cuaElement;    
+                // siguiente elemento
+                item.next = cuaElement;
+                // devolver el último elemento
+                document.getElementById("queue").innerHTML = "Queue: " + item.value ;
+
+            }
+    
+            dequeue () {
+                let item = new Item();
+                // leer tamaño de next
+                // extraer el primer elemento metido
+                // devoler el elemento extraído
+                document.getElementById("queue").innerHTML = "Queue: " + item.next;
+            }
+        }
+
+        // comprobar
+        let p = new Pila();
+        let c = new Cua();
+
+        // pila
+        p.push();
+        p.pop();
+
+        // cua
+        c.enqueue();
+        c.dequeue();
+    
+    </script>
+
+</body>
+</html>

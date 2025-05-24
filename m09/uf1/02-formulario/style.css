@@ -1,0 +1,106 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(img/maquetación_formulario-removebg-preview.png), linear-gradient(to right, #1ca3c8 20%,#72c3bc 100%); 
+    background-repeat: no-repeat;
+    background-position: top right;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 15mm 40mm 0mm 40mm;
+}
+
+h1 {
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+    margin: 3mm 0mm 7mm;
+}
+
+form {
+    width: 70%;
+    height: 60%;
+}
+
+label {
+    font-size: 17px;
+}
+
+input {
+    height: 7mm;
+    width: calc(30% - 3mm);
+    border: 1px solid #e2e2e2;
+    border-radius: 5px; 
+    margin-left: 30mm;
+    margin-top: 10mm;
+    padding-left: 2mm;
+    position: static;
+}
+
+#lname {
+    float: right;
+    margin-right: 45mm;
+    margin-left: 0;
+}
+
+label[for="quantity"] {
+    margin-left: 8.5mm;
+}
+
+#quantity {
+    width: calc(16% - 3mm);
+    margin-left: 10mm;
+    margin-right: 30mm;
+}
+
+#address {
+    width: calc(62% - 3mm);
+    margin-right: 45px;
+    margin: 4mm 8mm;
+    margin-top: 10mm;
+}
+
+#city {
+    margin: 0;
+    margin-left: 41mm;
+    margin-top: 5mm;
+}
+
+#country {
+    margin: 0;
+    margin-left: 4mm;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-left: 9mm;
+}
+
+img {
+    width: 30mm;
+    height: 30mm;
+    vertical-align: text-top;
+}
+
+.cakes3-4 {
+    margin-left: 40mm;
+
+}
+
+button {
+    color: rgb(255, 255, 255);
+    background-color: #19718E;
+    border-radius: 3px;
+    width: 35mm;
+    height: 12mm;
+    border: 1px solid #196e8a;
+    margin-top: 10mm;
+    margin-bottom: 10mm;    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

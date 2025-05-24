@@ -1,0 +1,22 @@
+body {
+    margin: 30mm;
+}
+
+div {
+    border: 1px solid grey;
+    width: 50mm;
+    border-radius: 30px;
+    box-shadow: 15px 15px 20px grey;
+    background: linear-gradient(to bottom, rgba(40,52,59,1) 0%,rgba(181,189,200,1) 100%);
+}
+
+img {
+    width: 50mm;
+}
+
+div:hover {
+    img {
+        transform: scale(1.5);
+        transition: 2s;
+    }
+}

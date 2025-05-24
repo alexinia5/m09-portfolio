@@ -1,0 +1,49 @@
+body {
+    margin: 30mm;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0);}
+  to {transform: rotate(360deg);}
+}
+
+.red {
+    background-color: #FF4040;
+    width: 60mm;
+    height: 60mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: rotate 2s infinite;
+}
+
+.green {
+    background-color: #407010;
+    width: 45mm;
+    height: 45mm;   
+    position: relative;
+
+    animation: rotate 3s infinite;
+}
+
+.blue {
+    background-color: blue;
+    width: 30mm;
+    height: 30mm;
+    position: absolute;
+    
+    animation: rotate 2s infinite;
+}
+
+.red:hover {
+    animation: rotate 4s infinite;
+}
+
+.red:hover + .green{
+    transition-delay: 0.5s;
+}
+
+.red:hover + .blue{
+    transition-delay: 0.5s;
+}

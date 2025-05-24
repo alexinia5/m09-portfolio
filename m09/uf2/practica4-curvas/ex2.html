@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    canvas {
+        border: 1px solid black;
+        padding: 0.2rem;
+    }
+</style>
+<body>
+    <canvas id="canvas" width="320" height="320"></canvas>
+    <script>
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+
+        ctx.beginPath();
+        ctx.moveTo(10, 140);
+        ctx.lineTo(10, 45);
+        ctx.quadraticCurveTo(10, 10, 40, 10); 
+        ctx.lineTo(160, 10);
+        ctx.quadraticCurveTo(201, 8, 200,40); 
+        ctx.lineTo(200, 140);
+        ctx.quadraticCurveTo(200, 170, 170, 170); 
+        ctx.lineTo(40, 170);
+        ctx.quadraticCurveTo(10, 170, 10, 140); 
+        ctx.stroke();
+    </script>
+</body>
+</html>

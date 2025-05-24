@@ -1,0 +1,74 @@
+body {
+    --red: #B93E37;
+    --yellow: #D1AC39;
+    --blue: #2952BA;
+    --white: white;
+}
+
+main {
+    background-color: #25282F;
+    width: 90vw;
+    height: 70vw;
+   
+    padding: 6mm;
+    gap: 5mm;
+
+    display: grid;
+    grid-template-columns: 50mm 35%;
+    grid-template-rows:    17mm 80% ;
+    grid-template-areas: 
+    "red-1     red-2  blue-1        blue-1         blue-1"
+    "yellow-1  red-2  white-content white-content  white-content"
+    "yellow-1  red-2  white-1       blue-2         yellow-2"      ;
+}
+
+div:nth-child(1){
+    background-color: var(--red);
+    grid-area: red-1;
+}
+div:nth-child(2){
+    background-color: var(--yellow);
+    grid-area: yellow-1;
+}
+div:nth-child(3){
+    background-color: var(--red);
+    grid-area: red-2;
+}
+div:nth-child(4){
+    background-color: var(--blue);
+    grid-area: blue-1;
+}
+div:nth-child(5){
+    background-color: var(--white);
+    grid-area: white-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10mm;
+
+    text-align: end;
+
+    .title {
+        background-color: white;
+        font-weight: 600;
+        font-size: 25mm;
+        padding: 0mm 10mm;
+    }
+    .text {
+        background-color: white;
+        padding: 0mm 10mm;
+    }
+}
+div:nth-child(6){
+    background-color: var(--white);
+    grid-area: white-1;
+}
+div:nth-child(7){
+    background-color: var(--blue);
+    grid-area: blue-2;
+}
+div:nth-child(8){
+    background-color: var(--yellow);
+    grid-area: yellow-2;
+}

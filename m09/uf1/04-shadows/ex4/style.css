@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nintendo-box {
+    background-color: #00B3B7;
+    margin: 35mm;
+    width: 60%;
+    height: 25em;
+    border-radius: 100px;
+    box-shadow: -13px -15px 8px 1px inset #03A4A8, 
+    8px 11px 6px 1px inset #64D4D6;
+}
+
+.back-pantalla {
+    background-color: #009fa4;
+    margin-left: 43.7mm;
+    top: 40mm;
+    width: 38.1%;
+    height: 22.6em;
+    position: absolute;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px 1px inset #047D82, -1px -2px 2px 1px inset #047D82;
+}
+
+.pantalla {
+    background-color: #2d302f;
+    margin-left: 54mm;
+    top: 10mm;
+    bottom: 10mm;
+    width: 55%;
+    height: 20em;
+    position: relative;
+}
+
+img {
+    width: 54%;
+    height: 19.3em;
+    position: relative;
+    margin-left: 55.2mm;
+    bottom: 73mm;
+}
+
+.circle-button {
+    background-color: #CFCFCF;
+    height: 17mm;
+    width: 17mm;
+    border-radius: 50mm;
+    box-shadow: 1px 1px 2px 1px inset;
+}
