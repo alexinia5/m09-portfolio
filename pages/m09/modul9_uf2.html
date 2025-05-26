@@ -13,7 +13,7 @@
         <nav class="navbar navbar-expand-lg position-sticky">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img class="w-25" src="img/logo.png" alt="">
+                    <img class="w-25" src="../../img/logo.png" alt="">
                 </a>
                 <button type="button" class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggler navigation">
@@ -56,8 +56,8 @@
     <div class="container-fluid">
         <div class="row text-center p-5 d-flex flex-column gap-3 justify-content-center align-items-center">
             <div class="col d-flex flex-column justify-content-center align-items-center">
-                <h3>My work</h3>
-                <h1>M09 UF2 Projects</h1>
+                <h3 class="title-uf">My work</h3>
+                <h1 class="title-uf">M09 UF2 Projects</h1>
                 <div class="rounded-1 border-line mt-3"></div>
             </div>
         </div>
@@ -70,7 +70,7 @@
                 </button>
                 <div class="p-2 rounded-4 m-3 imgEffect">
                     <img src="../../img/m09/uf2/video.png" alt="">
-                    <p class="text-black mt-3">Videos</p>
+                    <p class="info-uf mt-3">Videos</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -81,7 +81,7 @@
                 </button>
                 <div class="p-2 rounded-4 imgEffect m-3">
                     <img src="../../img/m09/uf1/maquetació-formulari.png" alt="">
-                    <p class="text-black mt-3">Rectangles</p>
+                    <p class="info-uf mt-3">Rectangles in Canvas</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -92,18 +92,18 @@
                 </button>
                 <div class="p-2 rounded-4 imgEffect m-3">
                     <img src="../../img/m09/uf1/maquetació-formulari.png" alt="">
-                    <p class="text-black mt-3">Lines</p>
+                    <p class="info-uf mt-3">Lines in Canvas</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 mb-5">
+                <button class="rounded-3 btnIframe position-absolute m-5 z-1" data-bs-toggle="modal" data-bs-target="#modalIframeEx4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="28" fill="#FFFFFF" class="bi bi-arrows-angle-expand" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
+                    </svg>
+                </button>
                 <div class="p-2 rounded-4 imgEffect m-3">
-                    <button class="rounded-3 btnIframe position-absolute m-5 z-1" data-bs-toggle="modal" data-bs-target="#modalIframeEx4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="28" fill="#FFFFFF" class="bi bi-arrows-angle-expand" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
-                        </svg>
-                    </button>
                     <img src="../../img/m09/uf1/maquetació-formulari.png" alt="">
-                    <p class="text-black mt-3">Circles & Curves</p>
+                    <p class="info-uf mt-3">Circles & Curves in Canvas</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -114,80 +114,22 @@
                 </button>
                 <div class="p-2 rounded-4 imgEffect m-3">
                     <img src="../../img/m09/uf1/maquetació-formulari.png" alt="">
-                    <p class="text-black mt-3">Images</p>
+                    <p class="info-uf mt-3">Images & Sprites in Canvas</p>
                 </div>
             </div>
         </div>
     </div> 
-    <footer></footer>
-
 
     <!-- iframe modal 1 -->
     <div class="modal fade" id="modalIframeEx1" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Simple videos exercices</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <div class="row flex flex-wrap">
-                        <div class="col-12 col-md-6 col-lg-4 mb-5">
-                            <button class="rounded-3 btnIframe position-absolute m-5 z-1" data-bs-toggle="modal" data-bs-target="#modalIframeExVideo1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="28" fill="#FFFFFF" class="bi bi-arrows-angle-expand" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
-                                </svg>
-                            </button>
-                            <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/pos3.png" alt="">
-                                <p class="text-black mt-3">Exercice 1</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 mb-5">
-                            <button class="rounded-3 btnIframe position-absolute m-5 z-1" data-bs-toggle="modal" data-bs-target="#modalIframeExVideo2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="28" fill="#FFFFFF" class="bi bi-arrows-angle-expand" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
-                                </svg>
-                            </button>
-                            <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/pos3.png" alt="">
-                                <p class="text-black mt-3">Exercice 2</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 mb-5">
-                            <button class="rounded-3 btnIframe position-absolute m-5 z-1" data-bs-toggle="modal" data-bs-target="#modalIframeExVideo3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="28" fill="#FFFFFF" class="bi bi-arrows-angle-expand" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
-                                </svg>
-                            </button>
-                            <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/pos3.png" alt="">
-                                <p class="text-black mt-3">Exercice 2</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 mb-5">
-                            <button class="rounded-3 btnIframe position-absolute m-5 z-1" data-bs-toggle="modal" data-bs-target="#modalIframeExVideo4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="28" fill="#FFFFFF" class="bi bi-arrows-angle-expand" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
-                                </svg>
-                            </button>
-                            <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/pos3.png" alt="">
-                                <p class="text-black mt-3">Exercice 4</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 mb-5">
-                            <button class="rounded-3 btnIframe position-absolute m-5 z-1" data-bs-toggle="modal" data-bs-target="#modalIframeExVideo5">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="28" fill="#FFFFFF" class="bi bi-arrows-angle-expand" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
-                                </svg>
-                            </button>
-                            <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/pos3.png" alt="">
-                                <p class="text-black mt-3">Exercice 5</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica1-videos/video.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
@@ -198,10 +140,10 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Drawing rectangles in Canvas</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
+                <div class="modal-body">
                     <div class="row flex flex-wrap">
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
                             <div class="p-2 rounded-4 imgEffect m-3">
@@ -210,8 +152,10 @@
                                         <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
                                     </svg>
                                 </button>
-                                <img src="../../img/m09/uf1/maquetació-formulari.png" alt="">
-                                <p class="text-black mt-3">Exercici 1</p>
+                                <div class="p-2 rounded-4 m-3 imgEffect">
+                                    <img src="../../img/m09/uf2/rect1.png" alt="">
+                                    <p class="info-uf mt-3">Exercice 1</p>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -221,8 +165,10 @@
                                         <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
                                     </svg>
                                 </button>
-                                <img src="../../img/m09/uf1/maquetació-formulari.png" alt="">
-                                <p class="text-black mt-3">Exercici 2</p>
+                                <div class="p-2 rounded-4 m-3 imgEffect">
+                                    <img src="../../img/m09/uf2/rect2.png" alt="">
+                                    <p class="info-uf mt-3">Exercice 2</p>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -232,8 +178,10 @@
                                         <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
                                     </svg>
                                 </button>
-                                <img src="../../img/m09/uf1/maquetació-formulari.png" alt="">
-                                <p class="text-black mt-3">Exercici 3</p>
+                                <div class="p-2 rounded-4 m-3 imgEffect">
+                                    <img src="../../img/m09/uf2/rect3.png" alt="">
+                                    <p class="info-uf mt-3">Exercice 3</p>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -243,8 +191,10 @@
                                         <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
                                     </svg>
                                 </button>
-                                <img src="../../img/m09/uf1/maquetació-formulari.png" alt="">
-                                <p class="text-black mt-3">Exercici 4</p>
+                                <div class="p-2 rounded-4 m-3 imgEffect">
+                                    <img src="../../img/m09/uf2/rect4.png" alt="">
+                                    <p class="info-uf mt-3">Exercice 4</p>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -254,8 +204,10 @@
                                         <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
                                     </svg>
                                 </button>
-                                <img src="../../img/m09/uf1/maquetació-formulari.png" alt="">
-                                <p class="text-black mt-3">Exercici 5</p>
+                                <div class="p-2 rounded-4 m-3 imgEffect">
+                                    <img src="../../img/m09/uf2/rect5.png" alt="">
+                                    <p class="info-uf mt-3">Exercice 5</p>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -265,8 +217,10 @@
                                         <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
                                     </svg>
                                 </button>
-                                <img src="../../img/m09/uf1/maquetació-formulari.png" alt="">
-                                <p class="text-black mt-3">Exercici 6</p>
+                                <div class="p-2 rounded-4 m-3 imgEffect">
+                                    <img src="../../img/m09/uf2/rect6.png" alt="">
+                                    <p class="info-uf mt-3">Exercice 6</p>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -276,8 +230,10 @@
                                         <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
                                     </svg>
                                 </button>
-                                <img src="../../img/m09/uf1/maquetació-formulari.png" alt="">
-                                <p class="text-black mt-3">Exercici 7</p>
+                                <div class="p-2 rounded-4 m-3 imgEffect">
+                                    <img src="../../img/m09/uf2/rect7.png" alt="">
+                                    <p class="info-uf mt-3">Exercice 7</p>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -287,8 +243,10 @@
                                         <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
                                     </svg>
                                 </button>
-                                <img src="../../img/m09/uf1/maquetació-formulari.png" alt="">
-                                <p class="text-black mt-3">Exercici 8</p>
+                                <div class="p-2 rounded-4 m-3 imgEffect">
+                                    <img src="../../img/m09/uf2/rect8.png" alt="">
+                                    <p class="info-uf mt-3">Exercice 8</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -302,10 +260,10 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Exercices</h5>
+                    <h5 class="modal-title">Drawing simple lines and abstract lines in Canvas</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
+                <div class="modal-body">
                     <div class="row flex flex-wrap">
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
                             <button class="rounded-3 btnIframe position-absolute m-5 z-1" data-bs-toggle="modal" data-bs-target="#modalIframeExLines2">
@@ -314,8 +272,8 @@
                                 </svg>
                             </button>
                             <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/pos2.png" alt="">
-                                <p class="text-black mt-3">Exercice 2</p>
+                                <img src="../../img/m09/uf2/line2.png" alt="">
+                                <p class="info-uf mt-3">Exercice 2</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -325,8 +283,8 @@
                                 </svg>
                             </button>
                             <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/pos2.png" alt="">
-                                <p class="text-black mt-3">Exercice 3</p>
+                                <img src="../../img/m09/uf2/line3.png" alt="">
+                                <p class="info-uf mt-3">Exercice 3</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -336,8 +294,8 @@
                                 </svg>
                             </button>
                             <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/pos3.png" alt="">
-                                <p class="text-black mt-3">Exercice 4</p>
+                                <img src="../../img/m09/uf2/line4.png" alt="">
+                                <p class="info-uf mt-3">Exercice 4</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -347,8 +305,8 @@
                                 </svg>
                             </button>
                             <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/pos5.png" alt="">
-                                <p class="text-black mt-3">Exercice 5</p>
+                                <img src="../../img/m09/uf2/line5.png" alt="">
+                                <p class="info-uf mt-3">Exercice 5</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -358,8 +316,8 @@
                                 </svg>
                             </button>
                             <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/pos5.png" alt="">
-                                <p class="text-black mt-3">Exercice 6</p>
+                                <img src="../../img/m09/uf2/line6.png" alt="">
+                                <p class="info-uf mt-3">Exercice 6</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -369,19 +327,8 @@
                                 </svg>
                             </button>
                             <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/pos3.png" alt="">
-                                <p class="text-black mt-3">Exercice 7</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 mb-5">
-                            <button class="rounded-3 btnIframe position-absolute m-5 z-1" data-bs-toggle="modal" data-bs-target="#modalIframeExLines8">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="28" fill="#FFFFFF" class="bi bi-arrows-angle-expand" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
-                                </svg>
-                            </button>
-                            <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/pos5.png" alt="">
-                                <p class="text-black mt-3">Exercice 8</p>
+                                <img src="../../img/m09/uf2/line7.png" alt="">
+                                <p class="info-uf mt-3">Exercice 7</p>
                             </div>
                         </div>
                     </div>
@@ -395,10 +342,10 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Exercices</h5>
+                    <h5 class="modal-title">Drawing circles and curves in Canvas</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
+                <div class="modal-body">
                     <div class="row flex flex-wrap">
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
                             <button class="rounded-3 btnIframe position-absolute m-5 z-1" data-bs-toggle="modal" data-bs-target="#modalIframeExCirCurv1">
@@ -407,8 +354,8 @@
                                 </svg>
                             </button>
                             <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/shad1.png" alt="">
-                                <p class="text-black mt-3">Exercice 1</p>
+                                <img src="../../img/m09/uf2/circ1.png" alt="">
+                                <p class="info-uf mt-3">Exercice 1</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -418,8 +365,8 @@
                                 </svg>
                             </button>
                             <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/shad2.png" alt="">
-                                <p class="text-black mt-3">Exercice 2</p>
+                                <img src="../../img/m09/uf2/circ2.png" alt="">
+                                <p class="info-uf mt-3">Exercice 2</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -429,8 +376,8 @@
                                 </svg>
                             </button>
                             <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/shad2.png" alt="">
-                                <p class="text-black mt-3">Exercice 3</p>
+                                <img src="../../img/m09/uf2/circ3.png" alt="">
+                                <p class="info-uf mt-3">Exercice 3</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -440,8 +387,8 @@
                                 </svg>
                             </button>
                             <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/shad4.png" alt="">
-                                <p class="text-black mt-3">Exercice 5</p>
+                                <img src="../../img/m09/uf2/circ5.png" alt="">
+                                <p class="info-uf mt-3">Exercice 5</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -451,8 +398,8 @@
                                 </svg>
                             </button>
                             <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/shad4.png" alt="">
-                                <p class="text-black mt-3">Exercice 6</p>
+                                <img src="../../img/m09/uf2/circ6.png" alt="">
+                                <p class="info-uf mt-3">Exercice 6</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -462,8 +409,8 @@
                                 </svg>
                             </button>
                             <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/shad4.png" alt="">
-                                <p class="text-black mt-3">Exercice 7</p>
+                                <img src="../../img/m09/uf2/circ7.png" alt="">
+                                <p class="info-uf mt-3">Exercice 7</p>
                             </div>
                         </div>
                     </div>
@@ -477,10 +424,10 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Exercices</h5>
+                    <h5 class="modal-title">Making sprites in Canvas</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
+                <div class="modal-body">
                     <div class="row flex flex-wrap justify-content-lg-center">
                         <div class="col-12 col-md-6 col-lg-5 mb-5">
                             <button class="rounded-3 btnIframe position-absolute m-5 z-1" data-bs-toggle="modal" data-bs-target="#modalIframeExImg1">
@@ -489,8 +436,8 @@
                                 </svg>
                             </button>
                             <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/flex1.png" alt="">
-                                <p class="text-black mt-3">Exercice 1</p>
+                                <img src="../../img/m09/uf2/img1.png" alt="">
+                                <p class="info-uf mt-3">Exercice 1</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-5 mb-5">
@@ -500,8 +447,8 @@
                                 </svg>
                             </button>
                             <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/flex2.png" alt="">
-                                <p class="text-black mt-3">Exercice 2</p>
+                                <img src="../../img/m09/uf2/img2.png" alt="">
+                                <p class="info-uf mt-3">Exercice 2</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-5 mb-5">
@@ -511,8 +458,8 @@
                                 </svg>
                             </button>
                             <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/flex2.png" alt="">
-                                <p class="text-black mt-3">Exercice 3.1</p>
+                                <img src="../../img/m09/uf2/img3.1.png" alt="">
+                                <p class="info-uf mt-3">Exercice 3.1</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-5 mb-5">
@@ -522,8 +469,8 @@
                                 </svg>
                             </button>
                             <div class="p-2 rounded-4 m-3 imgEffect">
-                                <img src="../../img/m09/uf1/flex2.png" alt="">
-                                <p class="text-black mt-3">Exercice 3.2</p>
+                                <img src="../../img/m09/uf2/img3.2.png" alt="">
+                                <p class="info-uf mt-3">Exercice 3.2</p>
                             </div>
                         </div>
                     </div>
@@ -533,187 +480,114 @@
     </div>
 
 
-
-    <!-- iframe videos exercices-->
-    <div class="modal fade" id="modalIframeExVideo1" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf1/03-z-index-position/ej1/index.html" frameborder="0" height="1000px"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalIframeExVideo2" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf1/03-z-index-position/ej2/index.html" frameborder="0" height="1000px"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalIframeExVideo3" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf1/03-z-index-position/ej3/index.html" frameborder="0" height="1000px"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalIframeExVideo4" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf1/03-z-index-position/ej5/index.html" frameborder="0" height="1000px"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalIframeExVideo5" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf1/03-z-index-position/ej5/index.html" frameborder="0" height="1000px"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     <!-- iframe rectangles exercices -->
     <div class="modal fade" id="modalIframeExRect1" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 1</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica2-rectangulos/ej1.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica2-rectangulos/ej1.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExRect2" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 2</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica2-rectangulos/ej2.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica2-rectangulos/ej2.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExRect3" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 3</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica2-rectangulos/ej3.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica2-rectangulos/ej3.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExRect4" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 4</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica2-rectangulos/ej4.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica2-rectangulos/ej4.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExRect5" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 5</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica2-rectangulos/ej5.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica2-rectangulos/ej5.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExRect6" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 6</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica2-rectangulos/ej6.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica2-rectangulos/ej6.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExRect7" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 7</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica2-rectangulos/ej7.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica2-rectangulos/ej7.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExRect8" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 8</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica2-rectangulos/ej8.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica2-rectangulos/ej8.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
@@ -722,98 +596,84 @@
 
     <!-- iframe lines exercices -->
     <div class="modal fade" id="modalIframeExLines2" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 2</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica3-trazos/ex2.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica3-trazos/ex2.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExLines3" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 3</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica3-trazos/ex3.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica3-trazos/ex3.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExLines4" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 4</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica3-trazos/ex4.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica3-trazos/ex4.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExLines5" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 5</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica3-trazos/ex5.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica3-trazos/ex5.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExLines6" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 6</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica3-trazos/ex6.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica3-trazos/ex6.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExLines7" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 7</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica3-trazos/ex7.html" frameborder="0" height="1000px"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalIframeExLines8" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica3-trazos/ex8.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica3-trazos/ex7.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
@@ -823,84 +683,84 @@
 
     <!-- iframe circles & curves exercices -->
     <div class="modal fade" id="modalIframeExCirCurv1" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 1</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica4-curvas/ex1.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica4-curvas/ex1.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExCirCurv2" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 2</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica4-curvas/ex2.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica4-curvas/ex2.html" frameborder="0" width="1000px"height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExCirCurv3" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 3</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica4-curvas/ex3.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica4-curvas/ex3.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExCirCurv5" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 5</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica4-curvas/ex5.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica4-curvas/ex5.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExCirCurv6" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 6</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica4-curvas/ex6.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica4-curvas/ex6.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExCirCurv7" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                <h5 class="modal-title">Exercice 7</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica4-curvas/ex7.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica4-curvas/ex7.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
@@ -909,56 +769,56 @@
 
     <!-- iframe images exercices -->
     <div class="modal fade" id="modalIframeExImg1" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 1</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica5-imagenes/ex1.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica5-imagenes/ex1.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExImg2" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 2</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica5-imagenes/ex2.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica5-imagenes/ex2.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExImg3.1" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 3.1</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica5-imagenes/ex3_1.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica5-imagenes/ex3_1.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalIframeExImg3.2" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Title Project</h5>
+                    <h5 class="modal-title">Exercice 3.2</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-content">
-                    <iframe src="../../m09/uf2/practica5-imagenes/ex3_2.html" frameborder="0" height="1000px"></iframe>
+                <div class="modal-body">
+                    <iframe src="../../m09/uf2/practica5-imagenes/ex3_2.html" frameborder="0" width="1000px" height="600px"></iframe>
                 </div>
             </div>
         </div>

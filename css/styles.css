@@ -8,6 +8,10 @@ section {
     background-color: #3a6a7f;
 }
 
+body {
+    background-color: #f1f6f8;
+}
+
 /* menu navbar*/
 .link-hover, .link-hover-items {
     color: black;
@@ -29,6 +33,10 @@ section {
     width: 150px;
     background-color: #2b8bb1;
 } 
+
+.title-uf {
+    color: #274c7c;
+}
 
 .imgEffect {
     height: 350px;
@@ -56,7 +64,6 @@ section {
 
 /* dark theme */
 html[data-bs-theme="dark"] {
-
     body {
         background-color: #0d1118;
     }
@@ -96,5 +103,9 @@ html[data-bs-theme="dark"] {
         height: 5px;
         width: 150px;
         background-color: #8da6fa;
+    }
+
+    .title-uf, .info-uf {
+        color: #d5dfec;
     }
 }
