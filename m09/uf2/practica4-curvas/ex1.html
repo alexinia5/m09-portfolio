@@ -18,13 +18,13 @@
         let centerX = canvas.width/2;
         let centerY = canvas.height/2;
 
-        // 1r dibuix, abans del cercle petit
         ctx.fillStyle = 'black';
         ctx.beginPath();
         ctx.arc(centerX, centerY, 100, Math.PI, Math.PI*0.5);
         ctx.arc(centerX, centerY, 50, Math.PI*0.5, Math.PI);
         ctx.closePath();
         ctx.fill();
+        
         // 2n dibuix
         ctx.fillStyle = 'red';
         ctx.beginPath();

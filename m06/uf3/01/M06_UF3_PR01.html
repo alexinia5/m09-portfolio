@@ -6,15 +6,11 @@
 <script type="text/javascript">
 window.onload = function() {
 	const enlaces = document.querySelectorAll("a")
-
-	// Numero de enlaces de la pagina
 	console.log(enlaces.length)
 
-	// Direccion del penultimo enlace
 	let penultimo = enlaces.length-2
 	console.log(enlaces[penultimo].getAttribute("href"))
 
-	// Numero de enlaces que apuntan a http://prueba
 	let count = 0;
 	for(let a in enlaces) {
 		if (enlaces[a].getAttribute('href') == "http://prueba/") {
@@ -23,13 +19,12 @@ window.onload = function() {
 		console.log(count)
 	}
 
-	// Numero de enlaces del tercer p�rrafo
 	const tercerP = document.querySelectorAll("p")[2].querySelectorAll("a")
 	console.log(tercerP.length)
 }
 
 </script>
-</head>
+</head
 
 <body>
 <p>Lorem ipsum dolor sit amet, <a href="http://prueba/">consectetuer adipiscing elit</a>.

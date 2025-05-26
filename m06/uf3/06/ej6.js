@@ -2,7 +2,6 @@ function informacion(e) {
 	let dimensiones = tamañoVentanaNavegador();
 	let x = e.cientY;
 	let y = e.clientX;
-
 	let posHorizontal = 'Derecha';
 	let posVertical = 'Abajo';
 

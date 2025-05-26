@@ -46,6 +46,8 @@ console.log(printWeekNumberDay(Week.Saturday))
 
 
 // #region Exercici 5
+
+
 enum Size {
     'XS',
     'S',
@@ -56,6 +58,8 @@ enum Size {
 function getPriceFromSize(size : Size, price : number) : number {
     return price * (1+(size*0.5));
 }
+
+
 // #endregion
 
 

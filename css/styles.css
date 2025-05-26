@@ -1,6 +1,6 @@
 section {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding: 4rem;
 }
 
@@ -27,7 +27,14 @@ body {
     color: #2b8bb1;
 }
 
-/* mòduls projects */
+/* skills */
+.skill-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* modules projects */
 .border-line {
     height: 5px;
     width: 150px;
@@ -36,10 +43,6 @@ body {
 
 .title-uf {
     color: #274c7c;
-}
-
-.imgEffect {
-    height: 350px;
 }
 
 .imgEffect img {
@@ -82,6 +85,14 @@ html[data-bs-theme="dark"] {
 
     .link-hover-items:hover {
         color: #6143e9;
+    }
+
+    .landing-page {
+        background-image: url('/img/dark-wall.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-bottom-right-radius: 30%;
     }
 
     .box-landing1 {
