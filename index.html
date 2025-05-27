@@ -10,17 +10,17 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg position-sticky">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img class="w-25" src="../img/logo.png" alt="">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid d-inline-flex">
+                    <a class="navbar-brand w-50" href="#">
+                        <img src="../img/logo.png" alt="" width="60px">
                     </a>
                     <button type="button" class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggler navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end px-5" id="navbarSupportedContent">
-                        <ul class="navbar-nav gap-4">
+                        <ul class="navbar-nav gap-4 align-items-end m-2">
                             <li class="nav-item dropdown">
                                 <a class="dropdown-toggle link-hover" role="button" data-bs-toggle="dropdown" aria-expanded="false">M06</a>
                                 <ul class="dropdown-menu border-0">
@@ -58,53 +58,65 @@
                     </div>
                 </div>
             </section>
-            <section id="about">
-                <div
-                    class="container-fluid d-flex justify-content-center align-items-center">
-                    <div class="row text-center w-50 p-5">
-                        <h1 class="title">Who A Im?</h1>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Nam dolorum rerum eveniet
-                                provident quasi nesciunt harum repellendus,
-                                similique expedita id illo? Esse illum,
-                                necessitatibus eius libero iste accusantium
-                                beatae ullam?</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Obcaecati deserunt laborum
-                                recusandae ad error, quae magni. Quis, sequi
-                                suscipit similique quas laborum dolores quod
-                                enim totam quam numquam est nemo.</p>
+            <section class="d-flex justify-content-center">
+                <div class="container-fluid d-flex flex-column pt-5">
+                    <div class="row text-center d-flex flex-column align-items-center justify-content-center justify-content-md-start">
+                         <h1 class="title">Who A Im?</h1>
+                        <div class="col-11 col-md-7 col-lg-3 mt-2">
+                            <p>My name is Alexinia, and I'm currently 
+                                completing my studies in web application 
+                                development. I love working with programming, 
+                                from web design to everything related 
+                                to functionality, data storage and servers, in different
+                                programming languages.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mt-5 d-flex justify-content-center">
+                            <img src="img/laptop.png" alt="">
                         </div>
                     </div>
                 </div>
             </section>
             <section id="skills">
                 <div class="container-fluid">
-                    <h1 class="title">SKILLS</h1>
-                    <div class="container-fluid flex flex-row text-center">
-                        <div class="row flex flex-wrap mt-3">
-                            <div class="col-12 col-md-6 col-lg-4 mb-5 skill-box"><img src="/img/html.png" alt=""></div>
-                            <div class="col-12 col-md-6 col-lg-4 mb-5"><img src="/img/css.png" alt=""></div>
-                            <div class="col-12 col-md-6 col-lg-4 mb-5"><img src="/img/js.png" alt=""></div>
-                            <div class="col-12 col-md-6 col-lg-4 mb-5"><img src="/img/postgres.png" alt=""></div>
-                            <div class="col-12 col-md-6 col-lg-4 mb-5"><img src="/img/typescript.jpeg" alt=""></div>
-                            <div class="col-12 col-md-6 col-lg-4 mb-5"><img src="/img/express.jpeg" alt=""></div>
-                        </div>
+                    <div class="row">
+                        <h1 class="title">MY SKILLS</h1>
+                    </div>
+                    <div class="row flex flex-wrap gap-4 justify-content-md-center mt-5">
+                        <div class="col-12 col-md-5 col-lg-3 mb-2 skill-box"><img src="/img/html.png" alt="" class="icon"></div>
+                        <div class="col-12 col-md-5 col-lg-3 mb-2 skill-box"><img src="/img/css.png" alt="" class="icon"></div>
+                        <div class="col-12 col-md-5 col-lg-3 mb-2 skill-box"><img src="/img/postgres.png" alt="" class="icon"></div>
+                        <div class="col-12 col-md-5 col-lg-3 mb-2 skill-box"><img src="/img/typescript.jpeg" alt="" class="icon"></div>
+                        <div class="col-12 col-md-5 col-lg-3 mb-2 skill-box"><img src="/img/node.png" alt="" class="icon"></div>
+                        <div class="col-12 col-md-5 col-lg-3 mb-2 skill-box"><img src="/img/express.jpeg" alt="" class="icon"></div>
+                        <div class="col-12 col-md-5 col-lg-3 mb-2 skill-box"><img src="/img/bootstrap.png" alt="" class="icon"></div>                                            
                     </div>
                 </div>
             </section>
             <section id="hobbies">
                 <div class="container-fluid">
-                    <h1 class="title mb-5">MY HOBBIES</h1>
-                    <div class="container-fluid flex flex-row text-center">
-                        <div class="row flex flex-wrap mt-3">
-                            <div class="col-12 col-md-6 col-lg-4 mb-5">STUDYNG</div>
-                            <div class="col-12 col-md-6 col-lg-4 mb-5">ORGANIZATION</div>
-                            <div class="col-12 col-md-6 col-lg-4 mb-5">READING</div>
-                            <div class="col-12 col-md-6 col-lg-4 mb-5">DECORATE</div>
-                            <div class="col-12 col-md-6 col-lg-4 mb-5">NATURE</div>
-                            <div class="col-12 col-md-6 col-lg-4 mb-5">SING</div>
+                    <div class="row">
+                        <h1 class="title">MY HOBBIES</h1>
+                    </div>
+                    <div class="row d-flex flex-wrap gap-4 justify-content-md-center mt-5">
+                        <div class="col-12 col-md-5 col-lg-3 mb-2 box-hobbie">
+                            <div class="info-hobbie mt-3">STUDYNG</div>
+                        </div>
+                        <div class="col-12 col-md-5 col-lg-3 mb-2 box-hobbie">
+                            <div class="info-hobbie mt-3">ORGANIZATION</div>
+                        </div>
+                        <div class="col-12 col-md-5 col-lg-3 mb-2 box-hobbie">
+                            <div class="info-hobbie mt-3">READING</div>
+                        </div>
+                        <div class="col-12 col-md-5 col-lg-3 mb-2 box-hobbie">
+                            <div class="info-hobbie mt-3">DECORATE</div>
+                        </div>
+                        <div class="col-12 col-md-5 col-lg-3 mb-2 box-hobbie">
+                            <div class="info-hobbie mt-3">COOKING</div>
+                        </div>
+                        <div class="col-12 col-md-5 col-lg-3 mb-2 box-hobbie">
+                            <div class="info-hobbie mt-3">MUSIC</div>
                         </div>
                     </div>
                 </div>
