@@ -33,6 +33,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     border-bottom-right-radius: 30%;
+    height: 100vh;
 }
 
 .title {
@@ -41,6 +42,32 @@ body {
     text-align: center;
 }
 
+.box-landing1 {
+    width: auto;
+    height: auto;
+    background-color: hsl(242, 87%, 94%, 0.6);
+}
+
+.landing-title {
+    color: #4477ab;
+    font-size: 5rem;
+}
+
+.landing-name {
+    color: #4f578b;
+}
+
+@media screen and (max-width: 900px) {
+    .landing-title {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .landing-title {
+        font-size: 4rem;
+    }
+}
 /* skills */
 .skill-box {
     background-color: #a5c1e0;
@@ -173,8 +200,11 @@ html[data-bs-theme="dark"] {
     }
 
     .box-landing1 {
-        width: 550px;
-        height: 160px;
+        background-color: hsla(239, 33%, 66%, 0.397);
+    }
+
+    .landing-title, .landing-name {
+        color: #c1bfe6;
     }
 
     .skill-box {
